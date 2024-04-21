@@ -84,7 +84,7 @@
                     echo -n "ERROR: "
                   ''}
                   value=$(grep 'CONFIG_${key}[= ]' .config || :)
-                  echo "CONFIG_${key} should be left «is not set»... set to: «$value»."
+                  echo "CONFIG_${key} should be left «is not set»... currently set to: «$value»."
                 fi
               elif [[ ${line} == *=n ]]; then
                 # An absent `=n` value is *totally fine*.
@@ -102,7 +102,7 @@
                     echo -n "ERROR: "
                   ''}
                   value=$(grep 'CONFIG_${key}[= ]' .config || :)
-                  echo "CONFIG_${key} not set to «"${line}"»... set to: «$value»."
+                  echo "CONFIG_${key} not set to «"${line}"»... currently set to: «$value»."
                 fi
               else
                 if ! grep '^'${line}'$' .config > /dev/null; then
@@ -117,7 +117,7 @@
                   if [[ -z "$value" ]]; then
                     echo "CONFIG_${key} is expected to be set to «"${line}"», but is not present in config file."
                     else
-                    echo "CONFIG_${key} not set to «"${line}"»... set to: «$value»."
+                    echo "CONFIG_${key} not set to «"${line}"»... currently set to: «$value»."
                   fi
                 fi
               fi
