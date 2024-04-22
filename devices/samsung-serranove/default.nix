@@ -7,6 +7,7 @@
 # ** firmware-qcom-adreno-a300 -- Appears to be obtainable from linux-firmware: https://gitlab.com/postmarketOS/pmaports/-/commit/96f2ad2fac39bf9c38a822f5a4369adb3e2fdda2
 # ** msm-firmware-loader -- https://gitlab.com/postmarketOS/pmaports/-/tree/master/main/msm-firmware-loader
 # ** firmware-samsung-serranove-wcnss-nv -- https://gitlab.com/postmarketOS/pmaports/-/blob/master/device/community/firmware-samsung-serranove/APKBUILD
+# ** qhypstub -- https://github.com/msm8916-mainline/qhypstub maybe? (not used in pmos)
 
 {
   mobile.device.name = "samsung-serranove";
@@ -14,6 +15,8 @@
     name = "Galaxy S4 Mini Value Edition";
     manufacturer = "Samsung";
   };
+
+  mobile.device.supportLevel = "best-effort";
 
   # The hardware supports aarch64-*, but the firmware was never updated from armv7 -> Disfunctional GPU/WiFi/BT/Modem/Video on aarch64-*
   mobile.system.system = "armv7l-linux";
@@ -58,13 +61,10 @@
       offset_tags = "0x01e00000";
       pagesize = "2048";
     };
-    # appendDTB = [
-    #   "dtbs/qcom/sdm625-motorola-potter.dtb"
-    # ];
   };
 
-  # RFC(krey->samueldr): The boot partition on this device is 225.7M, should we use this?
-  # mobile.boot.stage-1.compression = lib.mkDefault "xz";
+  # To manage: skip copying recovery image avb footer (recovery partition size: 15728640, recovery image size: 15820800).
+  mobile.boot.stage-1.compression = lib.mkDefault "xz";
 
   mobile.usb = {
     mode = "gadgetfs"; # REVIEW(Krey): Unsure..

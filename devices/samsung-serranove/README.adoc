@@ -1,0 +1,43 @@
+= Samsung Galaxy S4 Mini Value Edition
+include::_support/common.inc[]
+
+== Device-specific notes
+
+DO_NOT_MERGE(Krey): To be adjusted..
+
+:: lk2nd
+
+nix-build --argstr device samsung-serranove -A pkgs.pkgsBuild.lk2ndMsm8916 -o lk2nd
+
+heimdall flash --BOOT result/lk2nd.img
+
+Note that you will need to either `$ nix-shell # Enter the impure shell of mobile-nixos` in this repository or adjust your nixos-config to use overlay from this repository
+
+:: rootfs + recovery
+
+nix-build --argstr device samsung-serranove -A outputs.android-fastboot-images
+
+or
+
+nix-build --argstr device samsung-serranove -A outputs.android-bootimg
+nix-build --argstr device samsung-serranove -A outputs.rootfs
+
+fastboot flash userdata result/system.img
+fastboot flash recovery result/recovery.img
+
+Now use the up/down keys and power key to select "Recovery mode", then connect to the device with adb
+
+$ adb shell
+~ $ mke2fs  /dev/disk/by-partlabel/system
+~ # mkdir /mnt2
+~ # mount /dev/disk/by-partlabel/system  /mnt2
+~ # exit
+
+$ adb push result/boot.img /mnt2
+$ adb reboot
+
+TODO: Firmware notes
+
+Additional notes
+
+In case the build breaks then first test the stage-1 with: $ nix-build examples/hello --argstr device samsung-sarranove -A outputs.default

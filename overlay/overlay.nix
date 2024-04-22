@@ -67,6 +67,7 @@ in
     rmtfs = callPackage ./qrtr/rmtfs.nix { };
 
     lk2ndMsm8953 = callPackage ./lk2nd/msm8953.nix {};
+    lk2ndMsm8919 = callPackage ./lk2nd/msm8916.nix {};
 
     #
     # Hacks
