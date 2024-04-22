@@ -1,0 +1,744 @@
+trace: (Using pinned Nixpkgs at ae22f8403a6aa4cc1bd30a0dbfb014187810af4e)
+trace: ****************************************
+trace: * Evaluating device: samsung-serranove *
+trace: ****************************************
+trace: Building with crossSystem?: armv7l-linux != x86_64-linux → we are.
+       crossSystem: config: armv7l-unknown-linux-gnueabihf
+trace: warning: system.stateVersion is not set, defaulting to 24.05. Read why this matters on https://nixos.org/manual/nixos/stable/options.html#opt-system.stateVersion.
+trace: Building with crossSystem?: armv7l-linux != x86_64-linux → we are.
+       crossSystem: config: armv7l-unknown-linux-gnueabihf
+trace: warning: lib.mdDoc will be removed from nixpkgs in 24.11. Option descriptions are now in Markdown by default; you can remove any remaining uses of lib.mdDoc.
+trace: warning: lib.mdDoc will be removed from nixpkgs in 24.11. Option descriptions are now in Markdown by default; you can remove any remaining uses of lib.mdDoc.
+trace: warning: lib.mdDoc will be removed from nixpkgs in 24.11. Option descriptions are now in Markdown by default; you can remove any remaining uses of lib.mdDoc.
+trace: warning: lib.mdDoc will be removed from nixpkgs in 24.11. Option descriptions are now in Markdown by default; you can remove any remaining uses of lib.mdDoc.
+trace: warning: system.stateVersion is not set, defaulting to 24.05. Read why this matters on https://nixos.org/manual/nixos/stable/options.html#opt-system.stateVersion.
+trace: warning: btrfs-progs neutered due to broken build with cross armv7l
+trace: Building with crossSystem?: armv7l-linux != x86_64-linux → we are.
+       crossSystem: config: armv7l-unknown-linux-gnueabihf
+trace: Building with crossSystem?: armv7l-linux != x86_64-linux → we are.
+       crossSystem: config: armv7l-unknown-linux-gnueabihf
+these 15 derivations will be built:
+  /nix/store/l1d1xi6jcsxjgy8shmcyb102iqr3i9mx-msm8916-firmware.drv
+  /nix/store/zcf8hg7bwqbmxzpp195c8bbk7vdgjp5i-msm8916-firmware-xz.drv
+  /nix/store/s9i7x0dlnlznmjqi6lbdnx0v82k0k7ph-firmware.drv
+  /nix/store/am1k247b25rc8dy2kxb61bwixfhgv587-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4-shrunk.drv
+  /nix/store/w1k867msg2wsg4kfig4zn9vkb2hay6y6-firmware.drv
+  /nix/store/9my1l6lgbzmr1lax2vsla93parq72bq2-mobile-nixos-initrd-samsung-serranove.drv
+  /nix/store/95g0yi7r7kbck8pp7k5q8a4nhbf5iy9l-etc-modprobe.d-firmware.conf.drv
+  /nix/store/jikvh915fi8imyg8cxghyfqhgibl8qm1-etc.drv
+  /nix/store/00fsndkhh3xdy2ydmi227in3pb4mpng8-nixos-system-nixos-24.05pre-git.drv
+  /nix/store/r5gfhqvnp8ypcqsnw161vkbcana6nb21-closure-info.drv
+  /nix/store/0amicwjq168pv9q9grnwwzxjzpgagh8p-filesystem-image.drv
+  /nix/store/1nc0mzzv39lvjl6hjbfr2r3myvzs07qr-mobile-nixos_samsung-serranove_boot.img.drv
+  /nix/store/c3wp3jbnmc18pw9qrj4v0j1ha5whcj8j-mobile-nixos-initrd-samsung-serranove.drv
+  /nix/store/2dcvr20qlza6j08l5yji301bm9035mbd-mobile-nixos_samsung-serranove_recovery.img.drv
+  /nix/store/zdhgalh0fzrakb4mnwmnsbw663l0rwk4-android-fastboot-images-samsung-serranove.drv
+building '/nix/store/l1d1xi6jcsxjgy8shmcyb102iqr3i9mx-msm8916-firmware.drv'...
+'/nix/store/4r7h02l4zdgkn83rw5sw9cfflc3577lw-linux-firmware-20240410/lib/firmware/qcom/a300_pfp.fw' -> '/nix/store/n4x0qihd6l0dd1n2c4mn2jx9nz6f6s4m-msm8916-firmware/lib/firmware/qcom/a300_pfp.fw'
+'/nix/store/4r7h02l4zdgkn83rw5sw9cfflc3577lw-linux-firmware-20240410/lib/firmware/qcom/a300_pm4.fw' -> '/nix/store/n4x0qihd6l0dd1n2c4mn2jx9nz6f6s4m-msm8916-firmware/lib/firmware/qcom/a300_pm4.fw'
+building '/nix/store/zcf8hg7bwqbmxzpp195c8bbk7vdgjp5i-msm8916-firmware-xz.drv'...
+mkdir: created directory 'lib/firmware'
+mkdir: created directory 'lib/firmware/qcom'
+sh -c 'xz -9c -T1 -C crc32 --lzma2=dict=2MiB "/nix/store/n4x0qihd6l0dd1n2c4mn2jx9nz6f6s4m-msm8916-firmware/$1" > "$1.xz"' -- lib/firmware/qcom/a300_pfp.fw
+sh -c 'xz -9c -T1 -C crc32 --lzma2=dict=2MiB "/nix/store/n4x0qihd6l0dd1n2c4mn2jx9nz6f6s4m-msm8916-firmware/$1" > "$1.xz"' -- lib/firmware/qcom/a300_pm4.fw
+Checking for broken symlinks:
+building '/nix/store/s9i7x0dlnlznmjqi6lbdnx0v82k0k7ph-firmware.drv'...
+created 989 symlinks in user environment
+building '/nix/store/95g0yi7r7kbck8pp7k5q8a4nhbf5iy9l-etc-modprobe.d-firmware.conf.drv'...
+building '/nix/store/am1k247b25rc8dy2kxb61bwixfhgv587-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4-shrunk.drv'...
+building '/nix/store/jikvh915fi8imyg8cxghyfqhgibl8qm1-etc.drv'...
+kernel version is 6.7.0-rc4
+root module: msm
+modprobe: FATAL: Module msm not found in directory /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/lib/modules/6.7.0-rc4
+  not found
+root module: zinitix
+modprobe: FATAL: Module zinitix not found in directory /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/lib/modules/6.7.0-rc4
+  not found
+root module: rt5033
+modprobe: FATAL: Module rt5033 not found in directory /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/lib/modules/6.7.0-rc4
+  not found
+root module: rt5033-charger
+modprobe: FATAL: Module rt5033-charger not found in directory /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/lib/modules/6.7.0-rc4
+  not found
+root module: panel-samsung-s6e88a0-ams427ap24
+modprobe: FATAL: Module panel-samsung-s6e88a0-ams427ap24 not found in directory /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/lib/modules/6.7.0-rc4
+  not found
+root module: configfs
+modprobe: FATAL: Module configfs not found in directory /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/lib/modules/6.7.0-rc4
+  not found
+root module: libcomposite
+modprobe: FATAL: Module libcomposite not found in directory /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/lib/modules/6.7.0-rc4
+  not found
+root module: loop
+modprobe: FATAL: Module loop not found in directory /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/lib/modules/6.7.0-rc4
+  not found
+root module: uinput
+modprobe: FATAL: Module uinput not found in directory /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/lib/modules/6.7.0-rc4
+  not found
+root module: evdev
+modprobe: FATAL: Module evdev not found in directory /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/lib/modules/6.7.0-rc4
+  not found
+root module: nls_cp437
+modprobe: FATAL: Module nls_cp437 not found in directory /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/lib/modules/6.7.0-rc4
+  not found
+root module: nls_iso8859-1
+modprobe: FATAL: Module nls_iso8859-1 not found in directory /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/lib/modules/6.7.0-rc4
+  not found
+root module: fat
+modprobe: FATAL: Module fat not found in directory /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/lib/modules/6.7.0-rc4
+  not found
+root module: vfat
+modprobe: FATAL: Module vfat not found in directory /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/lib/modules/6.7.0-rc4
+  not found
+root module: ext4
+modprobe: FATAL: Module ext4 not found in directory /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/lib/modules/6.7.0-rc4
+  not found
+root module: crc32c
+modprobe: FATAL: Module crc32c not found in directory /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/lib/modules/6.7.0-rc4
+  not found
+depmod: WARNING: could not open modules.builtin.modinfo at /nix/store/cbzlzagcwx2c9gxd5ghi4h2qyy8sbvzd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4-shrunk/lib/modules/6.7.0-rc4: No such file or directory
+building '/nix/store/w1k867msg2wsg4kfig4zn9vkb2hay6y6-firmware.drv'...
+created 1 symlinks in user environment
+building '/nix/store/9my1l6lgbzmr1lax2vsla93parq72bq2-mobile-nixos-initrd-samsung-serranove.drv'...
+building '/nix/store/c3wp3jbnmc18pw9qrj4v0j1ha5whcj8j-mobile-nixos-initrd-samsung-serranove.drv'...
+building '/nix/store/1nc0mzzv39lvjl6hjbfr2r3myvzs07qr-mobile-nixos_samsung-serranove_boot.img.drv'...
+building '/nix/store/00fsndkhh3xdy2ydmi227in3pb4mpng8-nixos-system-nixos-24.05pre-git.drv'...
+Using kernel: /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/zImage
+  $ cat /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/zImage dtbs/qcom-msm8916-samsung-serranove.dtb
+Using appended dtb kernel now...
+  $ mkbootimg --kernel /build/kernel-with-dtbs --ramdisk /nix/store/3mwjw0l6wfcncfbrln5pc071nc4jxk4k-mobile-nixos-initrd-samsung-serranove/initrd --cmdline 'console=tty1 loglevel=4 reflect_x' --base 0x80000000 --kernel_offset 0x00008000 --second_offset 0x00f00000 --ramdisk_offset 0x02000000 --tags_offset 0x01e00000 --pagesize 2048 -o /nix/store/gwwpafkmp9yxxq7yybycw82agpdqkk2r-mobile-nixos_samsung-serranove_boot.img
+building '/nix/store/2dcvr20qlza6j08l5yji301bm9035mbd-mobile-nixos_samsung-serranove_recovery.img.drv'...
+:: Adding Mobile NixOS information to the build...
+  $ mkdir -p /nix/store/k07pcd5h7q88glw735cw8s4dhzq4xx5l-nixos-system-nixos-24.05pre-git/mobile-nixos
+  $ cd /nix/store/k07pcd5h7q88glw735cw8s4dhzq4xx5l-nixos-system-nixos-24.05pre-git/mobile-nixos
+  $ echo samsung-serranove
+  $ ln -s /nix/store/4mpirwjgai3swianhas9r4l1vk8p4i0x-dtb-mapping.json dtb-mapping.json
+Using kernel: /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/zImage
+  $ cat /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4/zImage dtbs/qcom-msm8916-samsung-serranove.dtb
+Using appended dtb kernel now...
+  $ mkbootimg --kernel /build/kernel-with-dtbs --ramdisk /nix/store/h0zm68lh3q6sp4rhgyaa9gxj01dfj4bk-mobile-nixos-initrd-samsung-serranove/initrd --cmdline 'console=tty1 loglevel=4 reflect_x' --base 0x80000000 --kernel_offset 0x00008000 --second_offset 0x00f00000 --ramdisk_offset 0x02000000 --tags_offset 0x01e00000 --pagesize 2048 -o /nix/store/p0d7mn7f9zarxkb6yirc3snhb84kwjwq-mobile-nixos_samsung-serranove_recovery.img
+building '/nix/store/r5gfhqvnp8ypcqsnw161vkbcana6nb21-closure-info.drv'...
+structuredAttrs is enabled
+building '/nix/store/0amicwjq168pv9q9grnwwzxjzpgagh8p-filesystem-image.drv'...
+
+:: Running populatePhase
+
+Copying system closure...
+  Copying /nix/store/045rzvn7d69l8g0m99kqich50yy0y83f-ldns-armv7l-unknown-linux-gnueabihf-1.8.3
+  Copying /nix/store/067zr3yja6wkxzi1ms2glp6ld9w5952y-unit-post-resume.service
+  Copying /nix/store/06ay37kjjnbrws1y204ns8gxx284rr1n-libXmu-armv7l-unknown-linux-gnueabihf-1.1.4
+  Copying /nix/store/06bpk0xm65haadj85zrknj1c39wkhgqx-runuser-l.pam
+  Copying /nix/store/09m9rh68yf5wpcqf5dawsnsdjh2c3802-libpwquality-armv7l-unknown-linux-gnueabihf-1.4.5-lib
+  Copying /nix/store/0acrdrwfdnx68zkw4ppvppfw7nili0kr-gnutar-armv7l-unknown-linux-gnueabihf-1.35
+  Copying /nix/store/0f8y9zmafp1gh1hli51jl3nngwv95hbv-unit-nix-daemon.service
+  Copying /nix/store/0jxxz3z87m3yp988q6f8xmr6q114gkxi-util-linux-armv7l-unknown-linux-gnueabihf-2.39.3-man
+  Copying /nix/store/0lmpa71ig2v2d8nd63w6hnlp1bx38i5f-security-wrapper-unix_chkpwd-armv7l-unknown-linux-musleabihf
+  Copying /nix/store/0vhiz8n69hkhxp80crdfk8pwzxna9xma-groff-armv7l-unknown-linux-gnueabihf-1.23.0
+  Copying /nix/store/0w9xfg4w5akbs71f9yyqsqawi5qpisb9-unit-pre-sleep.service
+  Copying /nix/store/0ymfbvwvz0rxqd9bnvbnh5g1pm6drn7k-cracklib-armv7l-unknown-linux-gnueabihf-2.9.11
+  Copying /nix/store/0ymqp8bc9fr8nqnimqi375m1ncjw8zk1-unit-user-.service
+  Copying /nix/store/0zwkbm6b3yakzb1izc67qyic9xp1y6fk-xxHash-armv7l-unknown-linux-gnueabihf-0.8.2
+  Copying /nix/store/109f4lphq0gf19kanr04w43swd1h4r42-systemd-user.pam
+  Copying /nix/store/116mpbq9dfhjwjxs0amfvas44d0kwr4v-libICE-armv7l-unknown-linux-gnueabihf-1.1.1
+  Copying /nix/store/14j4rhqcjihjcf3rzfs8mxfl5i61icyl-zstd-armv7l-unknown-linux-gnueabihf-1.5.6-bin
+  Copying /nix/store/19m8bc0lhcjc2v3dbfmx8y3h6bc5xaib-mkpasswd-armv7l-unknown-linux-gnueabihf-5.5.22
+  Copying /nix/store/1fd7cvxyskf0wfbdxx6jgscp9zw065xj-oniguruma-armv7l-unknown-linux-gnueabihf-6.9.9-lib
+  Copying /nix/store/1hhq2l26cyyl7fvq6dn5yfp0dmdkk7nl-gnutar-armv7l-unknown-linux-gnueabihf-1.35-info
+  Copying /nix/store/1ii6nkxz422g69ip6dqf07acq6wjvgla-chfn.pam
+  Copying /nix/store/1kn22rl2kb3ad1z9x3qvs5wfqf36mwgi-which-armv7l-unknown-linux-gnueabihf-2.21
+  Copying /nix/store/1lidv4lhxy37vkl09n8rbx1zsyym5jb9-dbus-armv7l-unknown-linux-gnueabihf-1.14.10-lib
+  Copying /nix/store/1pjz5h2k9wkbsixcj6k0xz0c4dnsm06m-kmod-blacklist-armv7l-unknown-linux-gnueabihf-30+20230519-1ubuntu3
+  Copying /nix/store/1qrd5syc76aijqy5sd6icfa4mc3nv760-libnl-armv7l-unknown-linux-gnueabihf-3.8.0
+  Copying /nix/store/1xxm1i4m44m7ffffwp67fa4y528xq6qi-cryptsetup-armv7l-unknown-linux-gnueabihf-2.7.1
+  Copying /nix/store/1ya41810d85389y5br0kf0psl4c8zy2k-zlib-armv7l-unknown-linux-gnueabihf-1.3.1
+  Copying /nix/store/1z3rjbj8i499rl48gmc7jma819hciywv-aws-c-auth-armv7l-unknown-linux-gnueabihf-0.7.16
+  Copying /nix/store/24ccrvmjaylqqj3zfscczzkyic85kmmz-db-armv7l-unknown-linux-gnueabihf-5.3.28
+  Copying /nix/store/255w175kmjim89l23jpxj8mda338k9pd-userdel.pam
+  Copying /nix/store/27yzb7cijl734p14qvhwfvssiysnv15r-unit-dbus.service
+  Copying /nix/store/285krqwww66ajcyx5a3zx4x8nkcw8nll-elfutils-armv7l-unknown-linux-gnueabihf-0.191
+  Copying /nix/store/2b1h71fdm0115ppi7rg5dyrjqzk7b0kp-50-coredump.conf
+  Copying /nix/store/2c2nzz12gr0jr4hblnhmdd8zyv18zd54-nss-cacert-armv7l-unknown-linux-gnueabihf-3.98
+  Copying /nix/store/2cgfbnagzas8zd177878d2109wf0lbk2-etc-systemd-sleep.conf
+  Copying /nix/store/2df9ky7wswzsr6q5ip6yppw0b7k2dy7y-bcache-tools-armv7l-unknown-linux-gnueabihf-1.0.8
+  Copying /nix/store/2ij6maa7ndilg2s6yd3cdbv1j0x6xd91-security-wrapper-newgidmap-armv7l-unknown-linux-musleabihf
+  Copying /nix/store/2mrifyi6kzabyq36g5i02r87m3qmqi5j-xauth-armv7l-unknown-linux-gnueabihf-1.1.3
+  Copying /nix/store/2nlpyvg0iwy1055gy15b1vnb8wgnzvd3-tmpfiles.d
+  Copying /nix/store/2pjm3i04qizqpqn26ap6pw65b5vdkibk-lessconfig
+  Copying /nix/store/2q3jgzv0067r7hy4r9p2l0y2ijnycpzq-boehm-gc-armv7l-unknown-linux-gnueabihf-8.2.4
+  Copying /nix/store/2s1143qgmq26l1as0q3yvn5933nzxa87-libcap-armv7l-unknown-linux-gnueabihf-2.69
+  Copying /nix/store/2s6b3piwzw5balfr2gljmhh9gl7k29qm-nix-2.18.2-man
+  Copying /nix/store/2skx8hmb612fmbq1b51ryinnf4v2hz6p-libargon2-armv7l-unknown-linux-gnueabihf-20190702
+  Copying /nix/store/2slin915xwniz82hz2dilnjd3ayabvj8-nixos-install
+  Copying /nix/store/2x64khlw82faq8amy3wigr4p2vfc0q1a-etc-systemd-coredump.conf
+  Copying /nix/store/30ldi74nkmqvigqlnfy5pmnj98vxrlii-libuv-armv7l-unknown-linux-gnueabihf-1.48.0
+  Copying /nix/store/319h6jl4g5bni38mhg4nwh67yf1khqnp-unit-autovt-.service
+  Copying /nix/store/31j9y6jf239c3cfvagmn124flszipprp-aws-c-io-armv7l-unknown-linux-gnueabihf-0.14.6
+  Copying /nix/store/31npi3dk2d7ssw38r8bcrv1n36cynq8r-runuser.pam
+  Copying /nix/store/3208cpaahan5dayk0kmyari9l6zxbxg9-aws-c-http-armv7l-unknown-linux-gnueabihf-0.8.1
+  Copying /nix/store/33h984aqxyyngaff85xzmnpdr04081bh-iproute2-armv7l-unknown-linux-gnueabihf-6.8.0
+  Copying /nix/store/33r82174spvw0iwa0ngr0kgkr1lb3g3q-unit-systemd-logind.service
+  Copying /nix/store/33wjavrqmmhky5gjlnmfw08i2prkyv5r-security-wrapper-newgrp-armv7l-unknown-linux-musleabihf
+  Copying /nix/store/38gc63kfxy98ka6rl32ipwr8mivbdr4f-nixos-manual-html
+  Copying /nix/store/38hbyd1gwyszqslh3wycv5ly03dr75gj-update-users-groups.pl
+  Copying /nix/store/39f9vz7zpv3al1zyrnzclrxz0py9wszv-hicolor-icon-theme-0.17
+  Copying /nix/store/3a75vn7363a1j9kmb37ca6v8b6yqshyx-jemalloc-armv7l-unknown-linux-gnueabihf-5.3.0
+  Copying /nix/store/3d4z09gsysyxycz36k1zc9dlzgb58jrz-libSM-armv7l-unknown-linux-gnueabihf-1.2.4
+  Copying /nix/store/3idx1sfm1fppg6c2d62kmzylhwwri1h0-kbd-armv7l-unknown-linux-gnueabihf-2.6.4
+  Copying /nix/store/3isl03nar2d29j0n4h35vv3v092n35vr-coreutils-full-armv7l-unknown-linux-gnueabihf-9.5-info
+  Copying /nix/store/3ix2bzsjrksixpfgglg8261fla8s16vr-bash-armv7l-unknown-linux-gnueabihf-5.2p26
+  Copying /nix/store/3japfr5fqb9if6p9jfvsgv6wn6mmjcz9-mount-pstore.sh
+  Copying /nix/store/3jkl0cdh9jq9hnll61sai8c57k5znf7w-unit-sysinit-reactivation.target
+  Copying /nix/store/3kk48knwni59kpgshxcc22q2j90na07q-unit--.slice
+  Copying /nix/store/3l4vy6vrp5k8bhldlpa8wlnx4j9lkqwk-unit-fb-refresher.service
+  Copying /nix/store/3l57xv7xqkfjsdhxpyy79b3nnyw6ngzg-X-Restart-Triggers-reload-systemd-vconsole-setup
+  Copying /nix/store/3mwjw0l6wfcncfbrln5pc071nc4jxk4k-mobile-nixos-initrd-samsung-serranove
+  Copying /nix/store/3pakhvc8p20fssrfcvr4ly6mxq2kmh3r-gnused-armv7l-unknown-linux-gnueabihf-4.9
+  Copying /nix/store/3sfjqwrnll7l1fr735zsx4bxn0dcavc0-alsa-firmware-1.2.4-xz
+  Copying /nix/store/3sniynb4bmlypjxbn1fliv9vqr15wi24-firewall-start
+  Copying /nix/store/3wxlmm0dg6gshx8ydsvggmjnl7m6cg6q-db-armv7l-unknown-linux-gnueabihf-4.8.30
+  Copying /nix/store/3z4kmfplbhvpxlva32zzgrfxkg2k2vl1-libaio-armv7l-unknown-linux-gnueabihf-0.3.113
+  Copying /nix/store/40vhzh6acpjn8scl2y5jcvlf88vygqr6-X-Restart-Triggers-systemd-tmpfiles-resetup
+  Copying /nix/store/40ykyh02m43nsn4lsvr0av4x4m3zh2y0-libmd-armv7l-unknown-linux-gnueabihf-1.1.0
+  Copying /nix/store/42lxkif9yi3s36w87fabhn4ihdlf2baq-libfido2-armv7l-unknown-linux-gnueabihf-1.14.0
+  Copying /nix/store/42w9gimppfsm7pl9v3dmzrwn3cshsy6l-nixos-help
+  Copying /nix/store/44d9c9wcxzcaa0lhagm2phn1z7x7cbxb-unit-script-network-local-commands-start
+  Copying /nix/store/44lhhmd49d3bcl68y1knw9lvmc66jlal-unit-remote-fs.target
+  Copying /nix/store/47gq4i0r84kbgf3a2ywmm2n1dph9rp3j-firewall-stop
+  Copying /nix/store/4dxav3frwd944p3l0l37fsrxqqp7h4jp-extra-udev-rules
+  Copying /nix/store/4hx8y7p0yzr737i2mx878mq0y575855k-coreutils-armv7l-unknown-linux-gnueabihf-9.5
+  Copying /nix/store/4jl4zywxkb265rs6yymh3f8bgc23zah4-iptables-armv7l-unknown-linux-gnueabihf-1.8.10-man
+  Copying /nix/store/4mpirwjgai3swianhas9r4l1vk8p4i0x-dtb-mapping.json
+  Copying /nix/store/4rd3hzbjjiwpm91a87qb4qk2ppqsgnj9-relaxedsandbox.nix
+  Copying /nix/store/4yqfsgki76p31jnic2vvfk445i10na0r-curl-armv7l-unknown-linux-gnueabihf-8.7.1
+  Copying /nix/store/50f974aacwdf4mcv77ih36v9mdb34j1x-hwdb.bin
+  Copying /nix/store/54wqdm0xj4flq942f8nzif37d45wclpp-unit-systemd-tmpfiles-resetup.service
+  Copying /nix/store/5f0jz9w0ykcwh745sbhqcg2c331g8vmk-systemd-armv7l-unknown-linux-gnueabihf-255.4-man
+  Copying /nix/store/5h8c2zz5bwy26psqc5hlwaw7vvkh184y-curl-armv7l-unknown-linux-gnueabihf-8.7.1-bin
+  Copying /nix/store/5n90gwiisl6rdj9mni930pjfzm2wjcax-nettle-armv7l-unknown-linux-gnueabihf-3.9.1
+  Copying /nix/store/5nxlfj97k1q85hzg03pscz08iz7c9k2l-X-Restart-Triggers-systemd-sysctl
+  Copying /nix/store/5rlnzjlfgyqjaq79w1akpg5qilcybvi4-mpdecimal-armv7l-unknown-linux-gnueabihf-4.0.0
+  Copying /nix/store/62cs46sxwgvi379akigkng8m3yp8csw4-bzip2-armv7l-unknown-linux-gnueabihf-1.0.8
+  Copying /nix/store/64qhgyfvf1l8335w09c44scv91zwblp3-X-Restart-Triggers-systemd-timesyncd
+  Copying /nix/store/67d6nq7ry1cchljm05k1q72f0idibs7x-libidn2-armv7l-unknown-linux-gnueabihf-2.3.7
+  Copying /nix/store/696bllhmgpvlav9lv3ycj51gbj1w2jqh-util-linux-minimal-armv7l-unknown-linux-gnueabihf-2.39.3-login
+  Copying /nix/store/6bxb2idycjnn4fkz8n69jb4w15x53wgz-c-rbtree-armv7l-unknown-linux-gnueabihf-3.2.0
+  Copying /nix/store/6dsfplnf10b4qaf0bay2p02mhasl1g96-hosts
+  Copying /nix/store/6iqd9g91b693mccgvdal73h3dfymvvh0-fc-00-nixos-cache.conf
+  Copying /nix/store/6q0frgpg4ii3nsi44x7rpdz84r9qf6c9-libevent-armv7l-unknown-linux-gnueabihf-2.1.12
+  Copying /nix/store/6qsbkqmcpqa77hh2ypl0qfqcbg2fx972-unit-systemd-importd.service
+  Copying /nix/store/6vl5pg6m24p420j9i47jd3sqx1xixrz7-unit-systemd-user-sessions.service
+  Copying /nix/store/6wvn93d6qqaa1v2xy0byv0q4icspm90f-aws-c-mqtt-armv7l-unknown-linux-gnueabihf-0.10.3
+  Copying /nix/store/6xr30pxp575fa4h9bn25vpbr48h7j8fh-etc-lsb-release
+  Copying /nix/store/70b9pnkm1di1l1kf16zhla41lhyajayf-boehm-gc-armv7l-unknown-linux-gnueabihf-8.2.4
+  Copying /nix/store/76zvkq4chr35kgcaf3kc3v28y97w0spv-groupmems.pam
+  Copying /nix/store/77l0zr31vnqzgb2l4a37rmanhiw7496q-unit-getty-.service
+  Copying /nix/store/78m79i1wf8zv911d4pykqln53lc7znz5-gzip-armv7l-unknown-linux-gnueabihf-1.13-info
+  Copying /nix/store/7a418qpl14qinqmbl6537g6026a0h74w-dbus-broker-armv7l-unknown-linux-gnueabihf-35
+  Copying /nix/store/7b2q2k3i2wrak84fxwpqdgajnz1hrs08-ncurses-armv7l-unknown-linux-gnueabihf-6.4
+  Copying /nix/store/7cz678agszf6brkwvyyqq3i3xwf7rj54-fc-52-nixos-default-fonts.conf
+  Copying /nix/store/7d4a3xvzbi6qhyzckykq8zqm4yrvq188-etc-netgroup
+  Copying /nix/store/7fzxwpdfnxz584mhbr26k7zbd4gcpg5x-sudo.pam
+  Copying /nix/store/7gyb9xcbng6aq53qa7nbxsdavgai2k0d-cloud-utils-armv7l-unknown-linux-gnueabihf-0.32-guest
+  Copying /nix/store/7h7lgr8ck76indcvvblhl6qgdi52pmrk-libpcap-armv7l-unknown-linux-gnueabihf-1.10.4
+  Copying /nix/store/7h8xsgils84kl8xzm0pn72ypf7bxjlil-libcbor-armv7l-unknown-linux-gnueabihf-0.11.0
+  Copying /nix/store/7hqdl12y9jm0c97nqqc9r3q6hnwyp9h1-X-Restart-Triggers-dbus-broker
+  Copying /nix/store/7kanq0xx102br6nxxz92cf0dmhdfpgkn-fontconfig-armv7l-unknown-linux-gnueabihf-2.15.0-bin
+  Copying /nix/store/7l9ks0gapvfv995kvbf7lnarm9lk27mj-brotli-armv7l-unknown-linux-gnueabihf-1.1.0-lib
+  Copying /nix/store/7lf4zvs37xymykpp8hj5g13hlvlyws66-binutils-armv7l-unknown-linux-gnueabihf-2.41-lib
+  Copying /nix/store/7ll563jicnbjxc5k0ja94vsn3dngl6kw-smb-dummy.conf
+  Copying /nix/store/7zbh4kdlfpivjn5l8vdh0m2c6vp4jznq-X-Restart-Triggers-resolvconf
+  Copying /nix/store/80vsihn1y3dd039x6q13dw437nmx821f-usermod.pam
+  Copying /nix/store/82p3d3n13c1w575sykdly4i9nir0y45r-intel2200BGFirmware-3.1-xz
+  Copying /nix/store/83ibjxn6mkrvgkkhfwx7da7cc3gd4dj5-unit-run-initramfs.mount
+  Copying /nix/store/848pax5r105aj9an6zx4llpy8j6ax048-rt5677-firmware-xz
+  Copying /nix/store/84lj4fdnv67adx6n8l6m6avdbqbrjfm8-texinfo-interactive-armv7l-unknown-linux-gnueabihf-7.0.3
+  Copying /nix/store/84s2igvkk6pf08h2q3yi37kxlghnan8v-nixos-enter
+  Copying /nix/store/875js5klg9lbkanz7s2x38x91k1b7l26-aws-c-sdkutils-armv7l-unknown-linux-gnueabihf-0.1.15
+  Copying /nix/store/87mgsybc9f33pi09q5di0nvpdbhci2ai-findutils-armv7l-unknown-linux-gnueabihf-4.9.0-info
+  Copying /nix/store/88awwx3drkq8glrd69aq0a1scvxc53ga-aws-checksums-armv7l-unknown-linux-gnueabihf-0.1.18
+  Copying /nix/store/88dgqxwyqmgkqyq91cg7bd4bimgm9sdq-xz-armv7l-unknown-linux-gnueabihf-5.4.6-doc
+  Copying /nix/store/88zn81drvci1c6pp80nmn1dv4lcivr3b-etc-systemd-user.conf
+  Copying /nix/store/89f6gfh1x0imvp0a2iw1790k52i06pjy-less-armv7l-unknown-linux-gnueabihf-643
+  Copying /nix/store/89q2aippmrp17kzg7hvr41q5nmj07jx9-nix-2.18.2-doc
+  Copying /nix/store/8c0d096jl9v7pwyxld23w1484dbs2krj-perl5.38.2-DBD-SQLite-1.74-armv7l-unknown-linux-gnueabihf
+  Copying /nix/store/8f24q99cjkv06pymh4vq7ky866vacs4l-etc-sysctl.d-60-nixos.conf
+  Copying /nix/store/8h5650gsawsa8s5zljj2cnb462l7f9db-unit-container-.service
+  Copying /nix/store/8hhhaknjjaaxbs0afjdqq3pl08ramcl0-container-init
+  Copying /nix/store/8i4rbm3k27fvxxhj56iy34l5b9a6na97-util-linux-armv7l-unknown-linux-gnueabihf-2.39.3-lib
+  Copying /nix/store/8idja5hla735bkwj0xpy1bmacj1imknp-security-wrapper-sg-armv7l-unknown-linux-musleabihf
+  Copying /nix/store/8j1k2jg0966l3q3djzk66xbs24101a37-nixos-firewall-tool
+  Copying /nix/store/8jdmjxg1z44lwxvq2q39j6c6hhasgj8v-util-linux-armv7l-unknown-linux-gnueabihf-2.39.3-mount
+  Copying /nix/store/8jmjjbvlhd8jswklfp05mibv25zj82q8-perl-armv7l-unknown-linux-gnueabihf-5.38.2
+  Copying /nix/store/8jyaidks4d71kx823wnmprn905xwmc4g-libpng-apng-armv7l-unknown-linux-gnueabihf-1.6.43
+  Copying /nix/store/8k2rq7pb8d7dii005ikxlcqkvdz6121c-unit-dbus-broker.service
+  Copying /nix/store/8kdy3jv09lnybyx6gs3w817r69d2h00m-bash-interactive-armv7l-unknown-linux-gnueabihf-5.2p26-man
+  Copying /nix/store/8pd7z2vk7mzg70n9wv8jnsbcbnvcgq4w-tpm2-tss-armv7l-unknown-linux-gnueabihf-4.0.1
+  Copying /nix/store/8qak8ssjrmb86f85xyq7najbpy2rvanj-perl-armv7l-unknown-linux-gnueabihf-5.38.2-env
+  Copying /nix/store/8rzw7axg2fqczz2mhpr73ir7gz85bd9g-libseccomp-armv7l-unknown-linux-gnueabihf-2.5.5-lib
+  Copying /nix/store/8ypg9n2rs0k35lj6ap0w5b5q8b8fvx8l-libreelec-dvb-firmware-1.5.0-xz
+  Copying /nix/store/8ywbhc7jr90bmjf1lr39ls7gz4ax9lqk-freetype-armv7l-unknown-linux-gnueabihf-2.13.2
+  Copying /nix/store/91qg7rfnpb0dhsg2ml9y8pgvv1sx12ly-msm8916-firmware-xz
+  Copying /nix/store/92m70zr5ki2x33j2jrbgam8jcq2344dp-i3lock-color.pam
+  Copying /nix/store/93vm2v478ssl4b2ldxg712ixp40y4j67-make-initrd-ng-armv7l-unknown-linux-gnueabihf-0.1.0
+  Copying /nix/store/94fl34ln9grsnwljw3cs7z2sijg2wn55-firmware
+  Copying /nix/store/96kqg27wvyfinkz4cxkddl4apwi11jlb-mounts.sh
+  Copying /nix/store/99g6slv2hmh4rgyrgi3n2cychv8h04sk-unit-dhcpcd.service
+  Copying /nix/store/9bjsgy16wgn6k9r23bwdkl6sdgpxs17g-msm-fb-refresher-armv7l-unknown-linux-gnueabihf
+  Copying /nix/store/9fbrhrxp59ax740bl2ak6bdn4bagwxyl-groupadd.pam
+  Copying /nix/store/9l8pwvq72sbbp2a7hmi53s5m0ak6rjl2-coreutils-full-armv7l-unknown-linux-gnueabihf-9.5
+  Copying /nix/store/9v5fw0yhjgk8gdvzwcghghgbk4h20m9d-unit-resolvconf.service
+  Copying /nix/store/9ypigm24l6vdpaypbhhmvsdm85v8lsbh-libtasn1-armv7l-unknown-linux-gnueabihf-4.19.0
+  Copying /nix/store/9ziq0l1r9q4zksnd26l0i3wimni7galj-security-wrapper-newuidmap-armv7l-unknown-linux-musleabihf
+  Copying /nix/store/a1l1gx85bphq6zgq6f6rzr2pnf4i468d-fontconfig-conf
+  Copying /nix/store/a2pjnjk8jcira2jn9n9i9m3pxiydm4gw-ipv6-privacy-extensions.rules
+  Copying /nix/store/a30jmyccr81vmhzp0s8508hjlfy734z6-attr-armv7l-unknown-linux-gnueabihf-2.5.2-doc
+  Copying /nix/store/a3rh8vrankvgwm02ni3xrrd4gc3azqxf-libressl-armv7l-unknown-linux-gnueabihf-3.9.1
+  Copying /nix/store/a7adxyszjmi05lsf9dg47sivdvvh4lya-etc-systemd-system.conf
+  Copying /nix/store/a7ggamfvlhln4r2wsljm1fj19bfb79n0-acl-armv7l-unknown-linux-gnueabihf-2.3.2-man
+  Copying /nix/store/ad494zhllvbin6ymvs2lzm14yaqn6ysy-fontconfig-armv7l-unknown-linux-gnueabihf-2.15.0
+  Copying /nix/store/adh19bay67ilqh1x2a5gpibs4aqzjkn2-nano-armv7l-unknown-linux-gnueabihf-7.2-info
+  Copying /nix/store/ah5iay73z9m9bsrmbzfq8hjqirxncyjc-login.defs
+  Copying /nix/store/aj2pwvlk7fchakf5vpl2zx76922kiaax-libpsl-armv7l-unknown-linux-gnueabihf-0.21.5
+  Copying /nix/store/am6nknbv7bk37hcypdcxc990sdbbyraz-etc-nix-registry.json
+  Copying /nix/store/amr8jn09z2wklm1k16ymh77vlc3kwbgz-libcap-armv7l-unknown-linux-gnueabihf-2.69-man
+  Copying /nix/store/ar8w3hl7qdjnzry2m2xydxzdyimpai81-dbus-armv7l-unknown-linux-gnueabihf-1.14.10
+  Copying /nix/store/ark5hk5q29r9am9l2vkqq8wqdlfb514h-lowdown-armv7l-unknown-linux-gnueabihf-1.1.0-lib
+  Copying /nix/store/arl4xdpqf7yygry5srr4gqy75iqwmkk8-e2fsprogs-armv7l-unknown-linux-gnueabihf-1.47.0-info
+  Copying /nix/store/avf9n5rb792bc618sq63bp1fnfsl5n51-python3-armv7l-unknown-linux-gnueabihf-3.11.9
+  Copying /nix/store/avw7yknql25mvixn5535dg5cahih877q-security-wrapper-chsh-armv7l-unknown-linux-musleabihf
+  Copying /nix/store/axafjgc6jr8fsjw3j12wbaii8vwvjzgf-xlock.pam
+  Copying /nix/store/b16wf16cigkg6js5d0f6x2nazq0pj21s-procps-armv7l-unknown-linux-gnueabihf-3.3.17
+  Copying /nix/store/b1lk3s9nakq0nwwgg4wa58pvnw9nmwsw-security-wrapper-mount-armv7l-unknown-linux-musleabihf
+  Copying /nix/store/b2cgylvkb70srqyxzl0i8396kd6q4bs7-X-Restart-Triggers-nix-daemon
+  Copying /nix/store/b43nmk16gbmmnp7w24awpai2gcbwzk1m-unit-systemd-makefs-.service
+  Copying /nix/store/b5s2a8sd9h30yy7rnm0c47b4mg3rqc5x-gnugrep-armv7l-unknown-linux-gnueabihf-3.11
+  Copying /nix/store/b5yj2g7sy8b5q0p9cd4v7z2z4zzzqwvj-perl-armv7l-unknown-linux-gnueabihf-5.38.2-man
+  Copying /nix/store/b9yxrxcqpccbphsclh6761dhri4m61zc-set-environment
+  Copying /nix/store/bf0imvvz6hiaq6apzya0wk4rfsb5ja27-i3lock.pam
+  Copying /nix/store/bh0hiy9g2k9rpb007qzz1piydzjavypj-groupmod.pam
+  Copying /nix/store/bhv1fa4b83shhkwyvm513br0hnxlabx7-stub-ld-armv7l-unknown-linux-musleabihf
+  Copying /nix/store/bjy5xzx5qx39rvjq5k5ibd0prmr92f9z-ncurses-armv7l-unknown-linux-gnueabihf-6.4-man
+  Copying /nix/store/bk091pfizllvab9mqgvdzbfznqgmnnby-audit-armv7l-unknown-linux-gnueabihf-3.1.2
+  Copying /nix/store/bsmga91xiwsg3pxcjrsx0qyhxbsdm5q1-tcb-armv7l-unknown-linux-gnueabihf-1.2
+  Copying /nix/store/bwj8gmc9j6fkxg7h491jhbny3j2gsd3w-attr-armv7l-unknown-linux-gnueabihf-2.5.2-man
+  Copying /nix/store/bxqzjskdp9z42g8b2fssidhawxzja89f-xz-armv7l-unknown-linux-gnueabihf-5.4.6-man
+  Copying /nix/store/by337wd8i1i14lzzap0qpq9bkxhng0kx-etc-host.conf
+  Copying /nix/store/c5jbi67ngrfqfbkkjlhi8vf79779kgya-unit-nixos-fake-graphical-session.target
+  Copying /nix/store/c8d1xvi0xyjjskpb3pdb72ji2a1d67j0-nixos-generate-config
+  Copying /nix/store/c9zkwsn2019paq0n1bxvwxrvcrgyxlpm-libssh2-armv7l-unknown-linux-gnueabihf-1.11.0
+  Copying /nix/store/cabal8z5wqld0dqh9n2z0lblzirj1c0b-rsync-armv7l-unknown-linux-gnueabihf-3.2.7
+  Copying /nix/store/ccd51wak2fl1r2vypvf6srbhqbdnz3w3-fc-53-nixos-reject-type1.conf
+  Copying /nix/store/cf27h4afq7xhmg3kxr1xpai7al5xg696-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4-modules
+  Copying /nix/store/cfcfphss1pkbnmslv5a8v115m1wc9fs6-binutils-armv7l-unknown-linux-gnueabihf-2.41
+  Copying /nix/store/ch1h2lsfysrzqwlsdw9y8j5p5sgvc32y-util-linux-armv7l-unknown-linux-gnueabihf-2.39.3-login
+  Copying /nix/store/cixqxzvnkhg4az250zchxzjr2jhv78xa-bash-interactive-armv7l-unknown-linux-gnueabihf-5.2p26-doc
+  Copying /nix/store/clmbg6fmr6826mkz9d39xvri2an7j0c0-sudo-armv7l-unknown-linux-gnueabihf-1.9.15p5
+  Copying /nix/store/cm15fpw0k0h1b11waqkglcly1wsxjhq9-libmicrohttpd-armv7l-unknown-linux-gnueabihf-0.9.77
+  Copying /nix/store/cm1igmw04gikp06qc25gkp8khjqxp4kn-jq-armv7l-unknown-linux-gnueabihf-1.7.1
+  Copying /nix/store/cqmx2dwnf53qgw32d1g8lnvfzpc25455-util-linux-minimal-armv7l-unknown-linux-gnueabihf-2.39.3-lib
+  Copying /nix/store/cr6q95p1rdmbd8aba6jyi5g60y7987v9-nixos-container
+  Copying /nix/store/cv5kbc5l4zg2qgca4b5bhpfyl24xm2gl-perl5.38.2-File-Slurp-9999.32-armv7l-unknown-linux-gnueabihf
+  Copying /nix/store/cvrc57w8dsvmpb86m3kqavnqxv54pl7i-kexec-tools-armv7l-unknown-linux-gnueabihf-2.0.28
+  Copying /nix/store/cvy4bsvg0048dvnisgm7444qd4hjmjvq-nixos-option-armv7l-unknown-linux-gnueabihf
+  Copying /nix/store/d07dasfzdv4fvriwxi08b92iyb6wd91i-gnupg-armv7l-unknown-linux-gnueabihf-2.4.5
+  Copying /nix/store/d20vc2s5pfrcwspgj167gcbvi8nwd4ab-libxcrypt-armv7l-unknown-linux-gnueabihf-4.4.36
+  Copying /nix/store/d3rm1lq2c2rb076ffb9ch72705gqfzc0-append-initrd-secrets
+  Copying /nix/store/d531rxcbckb4a2fclq5nhrpfrn3m06fz-acl-armv7l-unknown-linux-gnueabihf-2.3.2-doc
+  Copying /nix/store/d72j90zc6fknxmhqqhz13hwk6lfq0ck3-linux-pam-armv7l-unknown-linux-gnueabihf-1.6.0-doc
+  Copying /nix/store/d8wr5p9086hfxdgbkgd8bnxxnyr8kvr1-findutils-armv7l-unknown-linux-gnueabihf-4.9.0
+  Copying /nix/store/ddrgx89jnmvk55fdsy8ywnl2ws48kwwa-libnfnetlink-armv7l-unknown-linux-gnueabihf-1.0.2
+  Copying /nix/store/dfgy39pjwdgg3gi12grcs11xlxnpwq7c-security-wrapper-fusermount-armv7l-unknown-linux-musleabihf
+  Copying /nix/store/dgb2vimkl2z3q7p65vxkhbqdbml41hml-json-c-armv7l-unknown-linux-gnueabihf-0.17
+  Copying /nix/store/dhm8njqym5qdx97mny3mr2ip8w9ygwwn-rtl8192su-unstable-2016-10-05-xz
+  Copying /nix/store/di8v1wmcfd6via2cnn2qpyl11wsmf4c6-openresolv-armv7l-unknown-linux-gnueabihf-3.13.2
+  Copying /nix/store/dn4q51zw2nfgxfccg7hgp2m9kpwd4pfp-pcre2-armv7l-unknown-linux-gnueabihf-10.43
+  Copying /nix/store/dqad0yhz508smbx0r7xaa6g786k5whzk-libgpg-error-armv7l-unknown-linux-gnueabihf-1.48
+  Copying /nix/store/drc83qxa1dvrqzmnvgci8grpl1hz9f8r-unit-script-nixos-activation-start
+  Copying /nix/store/dwv0wf3szv3ipgyyyrf1zxh4iqlckiip-inputrc
+  Copying /nix/store/dwzc95880f850xgb2p13km1k70h86r7i-glibc-locales-armv7l-unknown-linux-gnueabihf-2.39-5
+  Copying /nix/store/dxzb7xzc7lc44kmi5l2cc8y3hssl5p5i-npth-armv7l-unknown-linux-gnueabihf-1.7
+  Copying /nix/store/dzjk0anfrszcr854fzkaxz2927kx2lw4-zstd-armv7l-unknown-linux-gnueabihf-1.5.6-man
+  Copying /nix/store/dzjrvlpr7g24msdbgm6b09fmgxxw29lz-iana-etc-20240318
+  Copying /nix/store/f08dls97yd6f9vkl34zgijkl2ymb171z-tzdata-armv7l-unknown-linux-gnueabihf-2024a
+  Copying /nix/store/f24ffr5rasxf6rxbhazhil08fa463s1n-less-armv7l-unknown-linux-gnueabihf-643-man
+  Copying /nix/store/f34nnk7msmlf4rkm5n61dm5iqdrawdkp-nixos-version
+  Copying /nix/store/f6i03pl9zwrddh7q00cjfhhwjxlmbj63-fuse-armv7l-unknown-linux-gnueabihf-2.9.9
+  Copying /nix/store/f6jr2bap85n52zr2r2058nbmli9csnai-systemd-minimal-armv7l-unknown-linux-gnueabihf-255.4
+  Copying /nix/store/f79c05jyjadlbwbr2mhjjis6l6z1z0ba-publicsuffix-list-0-unstable-2024-01-07
+  Copying /nix/store/f7q77rvgfdq9pik7yryvnb33pa9aqxxn-unit-user-runtime-dir-.service
+  Copying /nix/store/f8j57gf1ghnc0435fkdx4c5s8piqfjg8-etc-ssh-ssh_known_hosts
+  Copying /nix/store/f8kwriy97p56y1sjrb2dpq9gmmzc6fq3-etc-shells
+  Copying /nix/store/f8lrwp7nym3rya4ccmiw0blvgaq312yw-iptables-armv7l-unknown-linux-gnueabihf-1.8.10
+  Copying /nix/store/fa4adm11grf26my2dm40d03gnzmb2dyz-shadow-armv7l-unknown-linux-gnueabihf-4.14.6
+  Copying /nix/store/fbpcg62xzj6fs0g1s40dknc5rbwgi774-local-cmds
+  Copying /nix/store/fg4pp0ml0dk5ihgfd2jgzrc05fznn41s-etc-man_db.conf
+  Copying /nix/store/fnapnhyl5x1gnm5bzq4s5xv0qi962578-c-dvar-armv7l-unknown-linux-gnueabihf-1.1.0
+  Copying /nix/store/fqsan6kva38mgz5saibym047ghwbm070-editline-armv7l-unknown-linux-gnueabihf-1.17.1
+  Copying /nix/store/frb8n03r91kpdm248qsgf6dkalln0lfs-unit-local-fs.target
+  Copying /nix/store/g0xvapw0gn0mhnk76b5nw7dpd0sz46ba-jq-armv7l-unknown-linux-gnueabihf-1.7.1-bin
+  Copying /nix/store/g1a6d70zckl27la0xwfvl71dh7jcfy86-linux-headers-static-6.7
+  Copying /nix/store/g28l15mbdbig59n102zd0ardsfisiw32-binfmt_nixos.conf
+  Copying /nix/store/g382jprlw2xm8vmjscyc44d890zkymj4-logrotate-armv7l-unknown-linux-gnueabihf-3.21.0
+  Copying /nix/store/g3n8yh4jgcig8rkfg5x2wdfj0y2nyvw3-bash-interactive-armv7l-unknown-linux-gnueabihf-5.2p26-info
+  Copying /nix/store/g4hcwnmm9f57nf2kymb9xvqk25s2ndnf-libunistring-armv7l-unknown-linux-gnueabihf-1.1
+  Copying /nix/store/g98bfksrpqdy3dmgrgsiywk9xdwb2irc-zstd-armv7l-unknown-linux-gnueabihf-1.5.6
+  Copying /nix/store/gbn51jhkjpchyim3b3v19446fxjbh5f7-etc-hostname
+  Copying /nix/store/gcnwmbn7c57936ymp2ankv9phdk54xjp-etc-modprobe.d-firmware.conf
+  Copying /nix/store/ggzhq5k54xl5jlc323g29zk6dln4lcdd-dhcpcd.conf
+  Copying /nix/store/gis1hfx8f3yvqhil98wc7rqwb58gn4py-unit-script-pre-sleep-start
+  Copying /nix/store/gkf377gpnqjyaqvy3chj9wk90lx1g61b-nix-bash-completions-armv7l-unknown-linux-gnueabihf-0.6.8
+  Copying /nix/store/gqg34d41vr9y56gsjhvm86d90ydgbvwx-X-Restart-Triggers-systemd-journald
+  Copying /nix/store/gr5giyg3bbp79pk7ijkkawfncvzdkv5x-e2fsprogs-armv7l-unknown-linux-gnueabihf-1.47.0-bin
+  Copying /nix/store/gvklyxfly5i9ms6smmdmm83xilwxzxkf-lesspipe-armv7l-unknown-linux-gnueabihf-2.11
+  Copying /nix/store/gwxn9kpi990l3ypwf0k6pm2k2clm9xsk-useradd.pam
+  Copying /nix/store/gxzj413qpa809y8g3m0kkidcqy292616-etc-nanorc
+  Copying /nix/store/gz4dqqbcn7s10m4nn6iggbqlpals9949-libedit-armv7l-unknown-linux-gnueabihf-20230828-3.1
+  Copying /nix/store/gzp0kn75bxlajigvlsxq6m3izhz6b4vg-qrencode-armv7l-unknown-linux-gnueabihf-4.1.1
+  Copying /nix/store/h0a2cdy0n34fabqmvcryagfq60rvhh3h-groupdel.pam
+  Copying /nix/store/h0wqrinbdddpq1nbxvd4qx2k0gwrcjd2-sound-theme-freedesktop-armv7l-unknown-linux-gnueabihf-0.8
+  Copying /nix/store/h12kwpj9h6ybsnzkd07zmgqrrd63hw53-locale.conf
+  Copying /nix/store/h3f5nw6bwvrq34fhrms8d3z1d5qsrgq4-diffutils-armv7l-unknown-linux-gnueabihf-3.10
+  Copying /nix/store/h6h182pkd7psa29b9cz9g6dvybipk17i-libX11-armv7l-unknown-linux-gnueabihf-1.8.7
+  Copying /nix/store/h8qm3z0x6ygh2r318sbbrr7w14pll90l-gptfdisk-armv7l-unknown-linux-gnueabihf-1.0.9
+  Copying /nix/store/h8wdwkwcif16pf8ai780w6bqs58i4rr8-useradd
+  Copying /nix/store/h9ydhkan3jwzzkvcixgb99gbcpbplyx8-unbound-armv7l-unknown-linux-gnueabihf-1.19.3-lib
+  Copying /nix/store/ha5ld7ybbjsrzm8s2r8pjsdi6ki6q6sd-etc-systemd-journald.conf
+  Copying /nix/store/hhiv37l7l7q66n0mgg32vhyks43jw55v-openssl-armv7l-unknown-linux-gnueabihf-3.0.13
+  Copying /nix/store/hix6xzb1y7nw2qi47m2yb1ni5sjzidwl-unit-growpart.service
+  Copying /nix/store/hjbv2s4jcxpvq07lxl4dna860rsdd3qf-multiuser.nix
+  Copying /nix/store/hkm9v4lwzbihjp7g5v2f62m2c467rvnc-unit-systemd-timedated.service
+  Copying /nix/store/hkpb8lxzbi1bhp1xdv1p051gh3cg4x4d-unit-nix-daemon.socket
+  Copying /nix/store/hlqbi5yzi4zpnf2wirs098jmr156hqjh-readline-armv7l-unknown-linux-gnueabihf-8.2p10
+  Copying /nix/store/hna8x91sffxd2a1zz58dal6kry73awql-iputils-armv7l-unknown-linux-gnueabihf-20240117
+  Copying /nix/store/hnsrb97pwbsphrpx8xfifvh8ccxqcqs7-xz-armv7l-unknown-linux-gnueabihf-5.4.6
+  Copying /nix/store/hpxkqyq79qqcrs0dzrhkv8v1yj1q5fid-security-wrapper-umount-armv7l-unknown-linux-musleabihf
+  Copying /nix/store/hq2kza3bxza0abrkyi2sz5j5bkl0asij-perl-armv7l-unknown-linux-gnueabihf-5.38.2-env
+  Copying /nix/store/hwdm6wara118w5ba1g6hnn3digzfwrj4-unit-kmod-static-nodes.service
+  Copying /nix/store/hzs1nh13jfc4wxs997q9s12aizwsa1wc-util-linux-armv7l-unknown-linux-gnueabihf-2.39.3-swap
+  Copying /nix/store/i21240b9wxvajg6gd5l6x6wdrvi69p7h-etc-fstab
+  Copying /nix/store/i2ficdx67xsqkq199rja6hkhas09c137-perl-armv7l-unknown-linux-gnueabihf-5.38.2-env
+  Copying /nix/store/i47w9p45d6cjbrwcjmacb4vjfbl5vzsz-bash-interactive-armv7l-unknown-linux-gnueabihf-5.2p26
+  Copying /nix/store/i5v0d00f5m6ncqgld0iwhjr3ypnn93x7-gawk-armv7l-unknown-linux-gnueabihf-5.2.2
+  Copying /nix/store/i64swqdjg9dxvdvippczdi1ndwi8wlrn-c-shquote-armv7l-unknown-linux-gnueabihf-1.1.0
+  Copying /nix/store/i79pf0lwhkb486knzy47ax7s87w02cqr-extra-hwdb-file
+  Copying /nix/store/i954sf26ih8gcganfbimafiny2i6grxv-file-armv7l-unknown-linux-gnueabihf-5.45
+  Copying /nix/store/ifyxmlb3kbdxmgyf5p9mk5qs64hqpi0d-gmp-with-cxx-armv7l-unknown-linux-gnueabihf-6.3.0
+  Copying /nix/store/ihdvxabjfkyvg641drxf6y6xywjlw32y-etc-systemd-timesyncd.conf
+  Copying /nix/store/ii9n4sbix64nzc5q3fc062vmm2v9chmx-libffi-armv7l-unknown-linux-gnueabihf-3.4.6
+  Copying /nix/store/ikbcvhsccyz3zi2n077b14nyg7fjywfb-attr-armv7l-unknown-linux-gnueabihf-2.5.2-bin
+  Copying /nix/store/imgiyr14ra4hl9hqhmp53pbylgxbax1x-security-wrapper-fusermount3-armv7l-unknown-linux-musleabihf
+  Copying /nix/store/inapcjx87gc78wx8liy95c9ad3pvkkhi-util-linux-armv7l-unknown-linux-gnueabihf-2.39.3-bin
+  Copying /nix/store/ipn60d2sl62rksijmcf1fidz6m6m0mhb-cpio-armv7l-unknown-linux-gnueabihf-2.15
+  Copying /nix/store/iq0wp44h49aw2spjqa3xqkag6r78rqv7-unit-keys.target
+  Copying /nix/store/ir77fw88wyvj7y1mh8xgph8pbqwvzwjl-unit-script-nix-gc-start
+  Copying /nix/store/irk12cgygzfvfwbfd55wdlzqpy2dpcq0-glibc-armv7l-unknown-linux-gnueabihf-2.39-5-bin
+  Copying /nix/store/iwc3l9l1j2fg1znf5p0jcdcib8sq0sxi-lvm2-armv7l-unknown-linux-gnueabihf-2.03.23
+  Copying /nix/store/iwl92057dpxxkfl9r0z9cnclv5b2wicl-util-linux-minimal-armv7l-unknown-linux-gnueabihf-2.39.3-swap
+  Copying /nix/store/j0aqb9nk2973qd24sjzdnfp8spygvib5-s2n-tls-armv7l-unknown-linux-gnueabihf-1.4.9
+  Copying /nix/store/j11lwgrbcyvdb5ask6g5rvdn1gx1dzgb-dbus-armv7l-unknown-linux-gnueabihf-1.14.10-doc
+  Copying /nix/store/j14nd0h8zwcgvqqnfq0aahv7l6fy2225-unit-systemd-udev-settle.service
+  Copying /nix/store/j28jwp7dbi9f4kdi68x4a19n8178s0kx-perl5.38.2-JSON-4.10-armv7l-unknown-linux-gnueabihf
+  Copying /nix/store/j7mh2m5pqi215bddfbi70yxyv6bbk7fd-sof-firmware-2024.03-xz
+  Copying /nix/store/jamys80ibz47rfx9ial332wq937g0yp3-system-generators
+  Copying /nix/store/jcajly3lxxhmvv8iyk2v2m1hfxsjfqz7-jq-armv7l-unknown-linux-gnueabihf-1.7.1-man
+  Copying /nix/store/jixb8hzxjl623zqpcp6blqkskc0p8zbp-rtw88-firmware-unstable-2023-07-23-xz
+  Copying /nix/store/jj398hcxdz5s64nb5x558pzwqv98mdpv-etc-ssh-ssh_config
+  Copying /nix/store/jk7g8l591azw6fd8aswcn37sywcgxhnv-expat-armv7l-unknown-linux-gnueabihf-2.6.2
+  Copying /nix/store/jq8zfl27rjghbivm4109c4zn075giyl8-libgcc-armv7l-unknown-linux-gnueabihf-13.2.0
+  Copying /nix/store/jxa9mxmsi3vnnlx8zymx8xnl11j3vcbp-vlock.pam
+  Copying /nix/store/jxpslf7kmn0x3xc3ckm28wc7hxzc1k0m-libarchive-armv7l-unknown-linux-gnueabihf-3.7.2-lib
+  Copying /nix/store/jxvsibq92nswjg8xcvr4p3bshfkj51kp-chpasswd.pam
+  Copying /nix/store/jzxqin8zsp0xwv64h1sbcqizxk226kmp-dns-root-data-armv7l-unknown-linux-gnueabihf-2023-11-27
+  Copying /nix/store/k07pcd5h7q88glw735cw8s4dhzq4xx5l-nixos-system-nixos-24.05pre-git
+  Copying /nix/store/k0c2fcn1za963x7m2xyq1m8b3f3hkasx-unit-script-growpart-start
+  Copying /nix/store/k1x99dn1h01km9xgmq9xi9qwv44r5vxj-libressl-armv7l-unknown-linux-gnueabihf-3.9.1-man
+  Copying /nix/store/k4jgpmmi2hshf3zbmdq1036fah48pz3p-libXau-armv7l-unknown-linux-gnueabihf-1.0.11
+  Copying /nix/store/k5npk7kygs5aw8yybzh8hfjs7p5ivxdz-rtl8761b-firmware-xz
+  Copying /nix/store/k6jppra476wkvj63zaya95mdg0hb43n3-unit-script-network-setup-start
+  Copying /nix/store/k7qxd0dm4j215d9awjxqvlfp188paybf-unit-serial-getty-.service
+  Copying /nix/store/k83i5kqflpm31lsdkncn2k05lmqf6ypb-getent-glibc-armv7l-unknown-linux-gnueabihf-2.39-5
+  Copying /nix/store/kaai9j7lwicnjrbsl1hvnwlysn7gqd35-lvm2-armv7l-unknown-linux-gnueabihf-2.03.23-bin
+  Copying /nix/store/kc3nx8zls8ak7fqzlj3gp8cc1r4f9znm-attr-armv7l-unknown-linux-gnueabihf-2.5.2
+  Copying /nix/store/kg614byp7c4s6aq18cqzmhw63yxj1rgl-unit-network-online.target
+  Copying /nix/store/kh0hplk1v9649ylpymwhppp197z9gqff-udev-path
+  Copying /nix/store/kh4dmlb5kn33lb9hkv6y6wxwfl70i842-unit-prepare-kexec.service
+  Copying /nix/store/kj2qj14dkwsc1zg4qbxxvlmlxzmgldc2-unit-nix-gc.service
+  Copying /nix/store/kjr6888w484bhkhh9ha7hgzf5m05b32q-unit-systemd-remount-fs.service
+  Copying /nix/store/kmrkbb77i3k24mql6m11pmfp34f8hr9v-etc-modprobe.d-nixos.conf
+  Copying /nix/store/knyxiaw5ysc9c7cnadl82ygzqhjw6chs-fc-10-nixos-rendering.conf
+  Copying /nix/store/kxxk20w1xrjxsir0n1v0vjs91qa71c21-c-utf8-armv7l-unknown-linux-gnueabihf-1.1.0
+  Copying /nix/store/l0dsy9qk5zs0icxa4fkswldxw48wg87j-unit-script-container_-start
+  Copying /nix/store/l0ifr8sngn4pw0nd7zl06k6m065frlrp-system-units
+  Copying /nix/store/l0ky0khwp64s1jg3al9nkxkwra7b124z-unit-systemd-sysctl.service
+  Copying /nix/store/l13a8bqmxp7vax544wmnvm9182f50991-glibc-armv7l-unknown-linux-gnueabihf-2.39-5
+  Copying /nix/store/l2l39rfhvv8m7c29nw5wq4w1qa5n8zq6-etc-os-release
+  Copying /nix/store/la6xpf0gq1zx8ja6hxl6gxyk0sjmv49z-systemd-armv7l-unknown-linux-gnueabihf-255.4
+  Copying /nix/store/lbp6g1gw20px4fzzgcaqlm4avlgb32zw-bzip2-armv7l-unknown-linux-gnueabihf-1.0.8-man
+  Copying /nix/store/lck2y418yqhbxpirqg424g4zx60lrkv2-wireless-regdb-2024.01.23-xz
+  Copying /nix/store/lfzj2mx0zhxmjc7svgw7j7ijk8vlnpzj-dosfstools-armv7l-unknown-linux-gnueabihf-4.2
+  Copying /nix/store/lhjgfiaqmy7m3cc3kygbjc3lws97fyr5-acl-armv7l-unknown-linux-gnueabihf-2.3.2-bin
+  Copying /nix/store/li4ydlip1h4zbvm5vsswvgkvg95kiwi6-unit-systemd-journald-.service
+  Copying /nix/store/lihi965dms7r5m63x3556vaalr4np7i7-fc-53-no-bitmaps.conf
+  Copying /nix/store/lj9g9lcjrl73n60rgqksig5qlmx6ng0a-jq-armv7l-unknown-linux-gnueabihf-1.7.1-lib
+  Copying /nix/store/ll19s0p64kv9fl5gg9m9c0l72i4w9j87-util-linux-minimal-armv7l-unknown-linux-gnueabihf-2.39.3-bin
+  Copying /nix/store/lqa326afm6gfqnaw2nznl5pay4c5p1b3-libpipeline-armv7l-unknown-linux-gnueabihf-1.5.7
+  Copying /nix/store/lxsamsqg0jhgrvj0cgd6hlyw73zznwg7-unit-fs.target
+  Copying /nix/store/ly55jz5s6p015852k7xf3y8050xc3h4z-openssh-armv7l-unknown-linux-gnueabihf-9.7p1
+  Copying /nix/store/ly6f33ddbi40g6pfdps45dv8gzas2ff5-unit-user-.slice
+  Copying /nix/store/m059mq17pi28fxxgacapj5mrm2d94v9g-c-ini-armv7l-unknown-linux-gnueabihf-1.1.0
+  Copying /nix/store/m19y1mk0sriqsv118yphj6743ha0872r-perl5.38.2-IO-Stringy-2.113-armv7l-unknown-linux-gnueabihf
+  Copying /nix/store/m1a6zlfdd4x6r027mmdxvbjqs097z70i-su.pam
+  Copying /nix/store/m1ir3v8nry4r31nqxi96b7lj0vs0lyv9-linux-firmware-20240410-xz
+  Copying /nix/store/m2mfcgd6ayfbl5sr1ks4gn755yvr9p2v-libnftnl-armv7l-unknown-linux-gnueabihf-1.2.6
+  Copying /nix/store/m33z5cc4n3cn7a9wknzcnfzw7rzkvrrq-gzip-armv7l-unknown-linux-gnueabihf-1.13-man
+  Copying /nix/store/m55hzfm1b194swczq6m4xq9wq53pmsyi-perl5.38.2-Config-IniFiles-3.000003-armv7l-unknown-linux-gnueabihf
+  Copying /nix/store/m6nlcniy0bk55z2m08vzga5g32p51p15-nix-armv7l-unknown-linux-gnueabihf-2.18.2
+  Copying /nix/store/m9d69vykggnikk37g0n5v0602f5mn6fh-etc-nscd.conf
+  Copying /nix/store/mag3q5iyr3zb1n5nxlwn27bsvh83nqq6-security-wrapper-passwd-armv7l-unknown-linux-musleabihf
+  Copying /nix/store/mavwg9lfp8gn9pbzv1skwb5kfi3x2l4x-systemd
+  Copying /nix/store/maxj0k9b139h2p6a72vns222bs6s3dpm-other.pam
+  Copying /nix/store/mgavyn28ss46ax0nfn8cqvkybahaayqn-w3m-armv7l-unknown-linux-gnueabihf-0.5.3+git20230121
+  Copying /nix/store/mrjq79vq22zhx6vghm4sdfmdxal7r59i-unit-system.slice
+  Copying /nix/store/mshzwvp02n88qwbyvncznzzlgm3kbq4c-unit-audit.service
+  Copying /nix/store/mv4mladypv2z94zyds0d8c718vs7fgrc-libbsd-armv7l-unknown-linux-gnueabihf-0.11.8
+  Copying /nix/store/mwmvv6p872vndink9dfrf4k9qhxcldpy-acl-armv7l-unknown-linux-gnueabihf-2.3.2
+  Copying /nix/store/mxl5gfsws40pgplbg5lb4wg2sj4g2p6h-sudoers
+  Copying /nix/store/my16b0ay4pp350fvqcz06591n0a0r62s-etc-pam-environment
+  Copying /nix/store/mz113f3fpc9y249kcqlh3m6q23f1y84i-audit-disable
+  Copying /nix/store/mzvhiai6s2x534mil35mx6rghdlwgs6m-etc
+  Copying /nix/store/n14raz1xdkhmgcbz722l539z23jn3m5k-security-wrapper-sudoedit-armv7l-unknown-linux-musleabihf
+  Copying /nix/store/n33ajs4q4s0d89y0pd0qc51icwl8n4wg-zd1211-firmware-1.5-xz
+  Copying /nix/store/n3mdrpyfzcis8lj34vfgr03pw3h5az25-xscreensaver.pam
+  Copying /nix/store/n3q2byax21x8rqalp844mckv3r08s6hz-etc-nsswitch.conf
+  Copying /nix/store/n4yprpvzs3z6z6ssw4km0wlyxxnpqm1m-unit-script-prepare-kexec-start
+  Copying /nix/store/n4zvji312v4m8wd9f9d9r1a8cl3aygid-armv7l-unknown-linux-gnueabihf-gcc-13.2.0-lib
+  Copying /nix/store/n564jc8sj5wdqxkdhwdmlh9wvhcs05q9-unit-systemd-fsck-.service
+  Copying /nix/store/n6xlm2kvk0pcndcr0a0z59y29b6ff3a0-unit-post-resume.target
+  Copying /nix/store/n9m8fyf36zip5nmwnplrlzyjz6fifcdx-etc-fuse.conf
+  Copying /nix/store/nc5frwwjcnr66kd3y2mwms50licsq580-shutdown-ramfs-contents
+  Copying /nix/store/ndglpkr5i9dx9r6wkvjzjscdc88hncz1-systemd-minimal-libs-armv7l-unknown-linux-gnueabihf-255.4
+  Copying /nix/store/nica2nsszp3cz8zy5444w97qy4l71d2v-diffutils-armv7l-unknown-linux-gnueabihf-3.10-info
+  Copying /nix/store/nkvbylh6g689jn9kk6g8vnxshwnjhlp2-unit-save-hwclock.service
+  Copying /nix/store/nnj63q17jyldn7yxfgbzj85kccn4a4cp-glib-armv7l-unknown-linux-gnueabihf-2.78.4
+  Copying /nix/store/np19vngshqvpgkxps4rzqx6n7m2rm3ld-unit-systemd-oomd.service
+  Copying /nix/store/np5a6rl84h376z8da1ykgq53vdwhzijz-unit-systemd-udevd.service
+  Copying /nix/store/npm0ha5i6f5r4zqb8fh5gsx9x7x2r09r-man-db-armv7l-unknown-linux-gnueabihf-2.12.1-doc
+  Copying /nix/store/nrn33nyaraismp58y8agglr8das9xik0-unit-nix-optimise.service
+  Copying /nix/store/nxndqy13nc8ysgbi72505rcc4k3rsa0a-perl5.38.2-String-ShellQuote-1.04-armv7l-unknown-linux-gnueabihf
+  Copying /nix/store/nyg41659n07hrpz2w2m6zh8b6bp6ghrq-unit-firewall.service
+  Copying /nix/store/p0l6xgy8i1vhnf0qivbncs05lh378l4k-aws-c-cal-armv7l-unknown-linux-gnueabihf-0.6.10
+  Copying /nix/store/p19vx8z9h5bkbpihmagsjxmbwgqnlvyw-issue
+  Copying /nix/store/p1cngvbgzv6744wwlpphnygxf4gbradr-popt-armv7l-unknown-linux-gnueabihf-1.19
+  Copying /nix/store/p24inx90p5jgr3sd8aldjlm399jdajqd-unit-systemd-update-utmp.service
+  Copying /nix/store/p34qmv2z5nixx93a2s77m819xjmmq5jz-fuse-armv7l-unknown-linux-gnueabihf-3.16.2
+  Copying /nix/store/p45cdzz3q21sdrv998n30la1jd7id09x-nix-info-armv7l-unknown-linux-gnueabihf
+  Copying /nix/store/p4f50n4xxdb59im8d6n895p98g676j4y-unit-systemd-random-seed.service
+  Copying /nix/store/pa0vcvkpl37aw78bb6y3pi63nzyz0bsd-patch-armv7l-unknown-linux-gnueabihf-2.7.6
+  Copying /nix/store/pbkdvda6vnlbnh08k3nwrs8dfkhdl8mm-lvm2-armv7l-unknown-linux-gnueabihf-2.03.23-lib
+  Copying /nix/store/pg2fyci723pmqiyfnh9v1zj0i4zy03yc-unit-systemd-mkswap-.service
+  Copying /nix/store/pg5wjpm58cwnv5s8ysnd0brh2cdpgwbk-gpm-armv7l-unknown-linux-gnueabihf-unstable-2020-06-17
+  Copying /nix/store/ph6adqz6ygr37x0nknpy5v11badzmacd-unit-systemd-timesyncd.service
+  Copying /nix/store/pkz42if9k6dk1pm9y4ya95r11zq99q36-gnused-armv7l-unknown-linux-gnueabihf-4.9-info
+  Copying /nix/store/pl12fs8mxammdwx0b6r1mn6rq0h4pppg-unit-logrotate-checkconf.service
+  Copying /nix/store/pl7xwckhvw2aw1395ifz23ygdw4cqql0-unit-systemd-modules-load.service
+  Copying /nix/store/pmh5f18dg5ymkpgs1rx0mny4nhphsz5i-perl-armv7l-unknown-linux-gnueabihf-5.38.2-env
+  Copying /nix/store/pmrc91rmyp3px0ryz2j09pkv93kcp749-unit-mount-pstore.service
+  Copying /nix/store/pn7akancxglclacn34s2v9zfjxabk8d8-etc-systemd-oomd.conf
+  Copying /nix/store/pq2vplq3m8jhpdbm162bpzj5srjr8k94-libmnl-armv7l-unknown-linux-gnueabihf-1.0.5
+  Copying /nix/store/pqqdyf09sadfhpc8fzs47ynjs00zgn73-e2fsprogs-armv7l-unknown-linux-gnueabihf-1.47.0-man
+  Copying /nix/store/ps7v3hwcd9d3fac953nhmnj8sfwk2b5y-shadow-armv7l-unknown-linux-gnueabihf-4.14.6-man
+  Copying /nix/store/psjidiyyx4k6fq9q0rcl8dzhzdy9zik1-unit-script-systemd-timesyncd-pre-start
+  Copying /nix/store/psjwpp7j953wd35msfnfzayli5379pzx-libcap-ng-armv7l-unknown-linux-gnueabihf-0.8.4
+  Copying /nix/store/pwsv8z5bmyp259gz5af196h4p5nbkikm-logrotate.conf
+  Copying /nix/store/pxcksks9mfrpzybz2sg44v42jkpq7fjw-unit-generate-shutdown-ramfs.service
+  Copying /nix/store/pxcli23z2nkn5ld144qbh7wkjc121ai9-nixos-manual.desktop
+  Copying /nix/store/pxj6sc96g99aill4h37sj0r143gnzw2r-perl5.38.2-DBI-1.643-armv7l-unknown-linux-gnueabihf
+  Copying /nix/store/q0d1adw32camd46zwadvczar77jpvpdi-aws-crt-cpp-armv7l-unknown-linux-gnueabihf-0.26.4
+  Copying /nix/store/q1gk5pfhfsif472gl1ap2x4ziksl7msi-gdbm-armv7l-unknown-linux-gnueabihf-1.23
+  Copying /nix/store/q57ji2c4vaqyjfn66wm2n0c94vhjam1p-bind-armv7l-unknown-linux-gnueabihf-9.18.25-lib
+  Copying /nix/store/q8jb4lf08cx7w7y6pazvljyq9bfy959i-unit-dbus-broker.service
+  Copying /nix/store/q9dq3rwib7jiy5sdr6h0cd2w1n8v3rvg-xz-armv7l-unknown-linux-gnueabihf-5.4.6-bin
+  Copying /nix/store/qaxiwlpf9s1zy9aq1kqvhpacybpjm4ak-util-linux-minimal-armv7l-unknown-linux-gnueabihf-2.39.3-mount
+  Copying /nix/store/qdskgl332ha0wzdpzi4ivp03fvi20h70-udev-rules
+  Copying /nix/store/qggfmf8v6l68zvh8pfdy1prxzpmqdfzm-bind-armv7l-unknown-linux-gnueabihf-9.18.25-man
+  Copying /nix/store/qgl9z7lgn656f9kgxj8cndrhbsnpm4lk-gnutls-armv7l-unknown-linux-gnueabihf-3.8.4
+  Copying /nix/store/qi9kxcjm42xppn8w5yjiicyaf3y4ncjp-strace-armv7l-unknown-linux-gnueabihf-6.8
+  Copying /nix/store/qjf44gjnkbzzlx9fnbgn6v5q03krqa7i-unit-reload-systemd-vconsole-setup.service
+  Copying /nix/store/ql1bschrc9gxk89bkdsgdirwmry7c2fa-audit-armv7l-unknown-linux-gnueabihf-3.1.2-bin
+  Copying /nix/store/qnf9wj0fh4z4qchvyyghi3labrj1j171-nix.conf
+  Copying /nix/store/qnmx2kxz1dprlrn85m0m1g0kk5nkscfh-libgcrypt-armv7l-unknown-linux-gnueabihf-1.10.3
+  Copying /nix/store/qp175rz3j7sz77bh5vhhb5rr5jf6ahga-gawk-armv7l-unknown-linux-gnueabihf-5.2.2-info
+  Copying /nix/store/qp4k2j2rqj4fkkwnsdai0np0j07p5gl8-bind-armv7l-unknown-linux-gnueabihf-9.18.25-host
+  Copying /nix/store/qz8q0h18985b8ymy28pj5cgh99i1m1f6-command-not-found
+  Copying /nix/store/r04l9d0i4h37qvilwphmr455ppgzsapj-login.pam
+  Copying /nix/store/r1nyf7v0sjkvmgk7qagb4qa6csby6f00-libselinux-armv7l-unknown-linux-gnueabihf-3.6
+  Copying /nix/store/r3inhlsja7pbjxw2sr3yi5j2ndx069w3-sqlite-armv7l-unknown-linux-gnueabihf-3.45.2
+  Copying /nix/store/r5cpmxkkbgjhp2bvkxr61i5jr9kc2zji-libkrb5-armv7l-unknown-linux-gnueabihf-1.21.2
+  Copying /nix/store/r5ybyrcg2xlgpj0w370a38b0q02sb9w2-fontconfig-etc
+  Copying /nix/store/r6ngxspy5qaz1imr7rr3qwcp0n3jakj4-libXt-armv7l-unknown-linux-gnueabihf-1.3.0
+  Copying /nix/store/rcnnzbl6ja29sqq8fkc046a4jp7wdc6l-libxcb-armv7l-unknown-linux-gnueabihf-1.16
+  Copying /nix/store/rg5rf512szdxmnj9qal3wfdnpfsx38qi-setup-etc.pl
+  Copying /nix/store/rhn72zs05xi07k8mmpbwmzgpdvz1ya8g-curl-armv7l-unknown-linux-gnueabihf-8.7.1-man
+  Copying /nix/store/ria82wnlqhvw2gbxc1zj6kcb8lnblqvn-lz4-armv7l-unknown-linux-gnueabihf-1.9.4
+  Copying /nix/store/riy6h3894l6s07p01z7pxbadk0mnrlvg-aws-c-s3-armv7l-unknown-linux-gnueabihf-0.5.4
+  Copying /nix/store/rmwznvd56ac3f4ck3klbkk89ys986nl2-unit-systemd-backlight-.service
+  Copying /nix/store/rnsrsx8jxrlfafrgzyz6mnfwf667zzq1-shared-mime-info-armv7l-unknown-linux-gnueabihf-2.4
+  Copying /nix/store/rqnjhf94c2p3p8wpi6vfqp0wiswhvv8y-aws-c-event-stream-armv7l-unknown-linux-gnueabihf-0.4.2
+  Copying /nix/store/rv03pz3ijmfa67fr4sgy2gqriyxd7w5z-libXdmcp-armv7l-unknown-linux-gnueabihf-1.1.4
+  Copying /nix/store/rx1nlfsq4qv1sswcsm0vbw8saq8bj8jw-keyutils-armv7l-unknown-linux-gnueabihf-1.6.3-lib
+  Copying /nix/store/ryfh699xcns761c5v4mfhnzqkx188xbn-libXext-armv7l-unknown-linux-gnueabihf-1.3.6
+  Copying /nix/store/rz9vwipijm090g31z25ri2hgrikl6vn3-libressl-armv7l-unknown-linux-gnueabihf-3.9.1-nc
+  Copying /nix/store/s3afhjn55y4qgcajyd5cpfkv6f3n16i6-dhcpcd-armv7l-unknown-linux-gnueabihf-10.0.6
+  Copying /nix/store/s56jq5r3wxxqzkicpqm860b366cb4rwj-nixos-rebuild
+  Copying /nix/store/s5992a373ijrqyq3cr1ryxs2413ss77j-unit-nixos-activation.service
+  Copying /nix/store/s7qv4xwqv698lvzm9l0lx950ihcil7yf-etc-resolvconf.conf
+  Copying /nix/store/s8fsk0q1yy3y842b88ym9c1xlkdd738a-nixos-help
+  Copying /nix/store/s9h31sa7p93ykp21pck308kfh7vwhjk2-X-Restart-Triggers-systemd-udevd
+  Copying /nix/store/sbcg8ynvawmiwzfwwzxn8ilq5lq7cnx1-time-armv7l-unknown-linux-gnueabihf-1.9
+  Copying /nix/store/sbg7rk5zk48hwmsdx227p0h3sv8sg6cd-unit-container-getty-.service
+  Copying /nix/store/scvhr32bfpymmzl8hpi7dkpfy1rv78sx-man-db-armv7l-unknown-linux-gnueabihf-2.12.1
+  Copying /nix/store/sd14djmmhka9l1az4iaz4nb82wxqigh0-security-wrapper-su-armv7l-unknown-linux-musleabihf
+  Copying /nix/store/sfjv60gppmjnbj4ngfs06vf3yjlhyqm1-unit-script-suid-sgid-wrappers-start
+  Copying /nix/store/sgasc9h0qcgk4af59v3spsrg79ja7xiq-libsodium-armv7l-unknown-linux-gnueabihf-1.0.19
+  Copying /nix/store/skdxw0nyk8w1sgzzvd5havcj4y0bnarl-libcap-armv7l-unknown-linux-gnueabihf-2.69-lib
+  Copying /nix/store/skflanl851li84ifa5w1r2lsvhda74zh-audit-stop
+  Copying /nix/store/sqf7y5vml54fiql3v147wv68mpk6whwk-unit-script-container_-pre-start
+  Copying /nix/store/ssniws0sl9dkmbbax69yprpf0czayq08-unit-nscd.service
+  Copying /nix/store/svj3ja0nl1r84xh1m2qdf3wa7b04czyq-aws-c-compression-armv7l-unknown-linux-gnueabihf-0.2.18
+  Copying /nix/store/sw0yjz7gwls2cj165zynymnh42wp9cgp-nixos-build-vms
+  Copying /nix/store/swnjgjcpmaqryw591995ksi81dlsml3s-libcap-armv7l-unknown-linux-gnueabihf-2.69-doc
+  Copying /nix/store/sy833lixil47vbxkgkp3arj249gyz1s3-mailcap-armv7l-unknown-linux-gnueabihf-2.1.53
+  Copying /nix/store/sz9ank15dhl49sw3pz1bwjcp7ipjak6r-system-shutdown
+  Copying /nix/store/szpnvv5iz02ixq9ddc966ahshdgdw35q-chsh.pam
+  Copying /nix/store/v30n9ccywgl1z6ll6h0n5zp995ix4nri-system-path
+  Copying /nix/store/v4hzyqlcy5dy9fq2xlz4cr2427iiv5zx-nixos-tmpfiles.d
+  Copying /nix/store/v4x8ycviy7020lg3n1s8yikc03n5z2yf-unit-network-local-commands.service
+  Copying /nix/store/vcg5al19ajhp7kgiv5ndjcx2pjp430j6-raspberrypi-wireless-firmware-unstable-2023-11-15-xz
+  Copying /nix/store/vdndhf7hsnkkwapdkx9sp8dsik5ggdkq-bash-completion-armv7l-unknown-linux-gnueabihf-2.13.0
+  Copying /nix/store/vdwi3vvjkkasnn098s7330ksaq96najz-linux-pam-armv7l-unknown-linux-gnueabihf-1.6.0
+  Copying /nix/store/vmif27z0kjphad3jynfpib82dchcqnsl-dejavu-fonts-minimal-armv7l-unknown-linux-gnueabihf-2.37
+  Copying /nix/store/vn4z6wcz1hxmq7g24bqff3igjx1n6v9a-kmod-armv7l-unknown-linux-gnueabihf-31-lib
+  Copying /nix/store/vwhn2iwkrrly22aym8k18g6v5n9232bf-libapparmor-armv7l-unknown-linux-gnueabihf-3.1.7
+  Copying /nix/store/vx81x1vgnhriby6xy1s04ns7j83hjvb1-etc-profile
+  Copying /nix/store/vxc60bg78c0vfpclvwymnyn1d09h0m46-bzip2-armv7l-unknown-linux-gnueabihf-1.0.8-bin
+  Copying /nix/store/w4nif7b42q4hhi3l5jaf3qxy5dppmw5l-nsncd-armv7l-unknown-linux-gnueabihf-unstable-2024-01-16
+  Copying /nix/store/w8adiz8x0rzqr76k3c1lz99wlvw777g0-busybox-static-armv7l-unknown-linux-musleabihf-1.36.1
+  Copying /nix/store/w8rjj3v2mil50826nrsckbl8947nk89z-unit-systemd-journald.service
+  Copying /nix/store/wbv0ysfw71ybifkwbmw1cpd2vds84nfc-X-Restart-Triggers-systemd-modules-load
+  Copying /nix/store/wfrscizp9aqiv2a7s5yammd4f23wrfkl-unit-dbus.socket
+  Copying /nix/store/wg2gr0rn429ddl6v0ci8knzs6b0vzjds-libassuan-armv7l-unknown-linux-gnueabihf-2.5.7
+  Copying /nix/store/wk2lg951jdka20dzx4vjc1c152yrrb0h-libbpf-armv7l-unknown-linux-gnueabihf-1.4.0
+  Copying /nix/store/wn1l1r2lhfwy5f8sxa0kih5vkg0jm3kb-gzip-armv7l-unknown-linux-gnueabihf-1.13
+  Copying /nix/store/wrqrjk17y4n4653c1mr70b7d8j4r9va4-unit-logrotate.timer
+  Copying /nix/store/wv6l0yhx5pj3pp5bcd42axgfwf764fg0-etc-systemd-logind.conf
+  Copying /nix/store/ww470qa00993yn7hwra0inbx5lqcm37h-passwd.pam
+  Copying /nix/store/wydsw0p8m6lzh3ggf4birbs69w9l8ylk-glibc-armv7l-unknown-linux-gnueabihf-2.39-5-getent
+  Copying /nix/store/x1a2b4kdq9nb7i5jdqdn9v1b47nv1b20-e2fsprogs-armv7l-unknown-linux-gnueabihf-1.47.0
+  Copying /nix/store/x1f00dvaxvdi537d8qibbplbj9fp344l-user-units
+  Copying /nix/store/x1v74dy0ry5gdqb32a33gs8gw0ybihil-p11-kit-armv7l-unknown-linux-gnueabihf-0.25.3
+  Copying /nix/store/x244ixngv050jn3sa19wwiz4rhksjn4i-aws-c-common-armv7l-unknown-linux-gnueabihf-0.9.14
+  Copying /nix/store/x5kz6ccglgsc6ygdgw0d4fi63yviz4fv-libnetfilter_conntrack-armv7l-unknown-linux-gnueabihf-1.0.9
+  Copying /nix/store/x6ypp05sm9iy42ixmkgrn4gcncq15z3s-unit-script-container_-post-start
+  Copying /nix/store/x7fh8pv4cpjy02q8f5h181589cv6y64z-unit-systemd-pstore.service
+  Copying /nix/store/xdj01bwrfs8a0dn9847c6c4dgidjk1zp-kmod-armv7l-unknown-linux-gnueabihf-31
+  Copying /nix/store/xglc134qhbmf60jvgidq9pa36p67cg8n-unit-logrotate.service
+  Copying /nix/store/xh1w3a8nqk1k67csymnaxmi2cpmhsv64-kmod-debian-aliases.conf-armv7l-unknown-linux-gnueabihf-30+20230601-2
+  Copying /nix/store/xm4w7dxbd7v3dy89wx3fwa60jaxz7i6z-users-groups.json
+  Copying /nix/store/xmznxad1pz8cxf0vf444xq4r3lsgpvxq-linux-pam-armv7l-unknown-linux-gnueabihf-1.6.0-man
+  Copying /nix/store/xpx1lyp6c1kw34g4p9h7fpb0asg73s13-X-Restart-Triggers-systemd-journald-
+  Copying /nix/store/xq2w9c3khyadd04i3idx3fh7jxrrfgrd-linux-armv7l-unknown-linux-gnueabihf-6.7.0-rc4
+  Copying /nix/store/xrhk3sx3dyhy9vq8pqh740nd0bhf0d1r-sandbox.nix
+  Copying /nix/store/xwpdn97ch0fwhj8mya51rkc91mn4ikmf-gnugrep-armv7l-unknown-linux-gnueabihf-3.11-info
+  Copying /nix/store/xyv485k99qhhrhw3iak30blw5vc9qywb-nixos.conf
+  Copying /nix/store/y1jqzi4xlwla9zarg88dr5lbq5zgi1my-unit-suid-sgid-wrappers.service
+  Copying /nix/store/y1v8kridzfwkv68ky7qbmc239r1mdk2a-nss-cacert-armv7l-unknown-linux-gnueabihf-3.98-p11kit
+  Copying /nix/store/y5nwadlhcnm41isq7br4nhqxvcccndbv-net-tools-armv7l-unknown-linux-gnueabihf-2.10
+  Copying /nix/store/y63wxvk3n20r3kd59b4m9dq6b0px5cxs-security-wrapper-sudo-armv7l-unknown-linux-musleabihf
+  Copying /nix/store/y921rwq28mmxj12ppbjmp0y1s8sbi47i-vconsole.conf
+  Copying /nix/store/y93dw69y9iv0yiis8f0lkzf4mzr2jqxl-etc-lvm-lvm.conf
+  Copying /nix/store/ybc9amwp076j5mc07hxdm9wghlmz6mwq-lvm2-armv7l-unknown-linux-gnueabihf-2.03.23-man
+  Copying /nix/store/ycjm66x1vpiycss0cjahvmkmkzgaj8q5-nixos-configuration-reference-manpage
+  Copying /nix/store/yd4qm7l9ymb9r3vjagax5imbkvsii4f9-unit-systemd-tmpfiles-setup.service
+  Copying /nix/store/yfdcmnbcj4m7l1n1y4hq8zlw84f5wcld-unit-script-post-resume-start
+  Copying /nix/store/ygzmi05ssd5v2y6ahg4iyranyihivn62-nghttp2-armv7l-unknown-linux-gnueabihf-1.61.0-lib
+  Copying /nix/store/yh6di3p0qz96wrh429jyqxgvcy6brbz2-reload-container
+  Copying /nix/store/yk0sfw7cwdwwcmxwn2grypqlklf6icag-pcsclite-armv7l-unknown-linux-gnueabihf-2.0.3-lib
+  Copying /nix/store/ykqp6lbman5lrsq9kjmb5s4i2622gsvp-null
+  Copying /nix/store/ym1r19mgizarwg4j903ajna0mbpgk57b-etc-bashrc
+  Copying /nix/store/yw8qhdi5z0vz769rni9v8f8qkmrm5i05-shadow-armv7l-unknown-linux-gnueabihf-4.14.6-su
+  Copying /nix/store/yyby7j1w16c4q73pbk0klxczrmp62pyv-ipv6-privacy-extensions.rules
+  Copying /nix/store/z03gbbzc98mzqqp34lm8iqyw010jpwbs-console-env
+  Copying /nix/store/z2vycmcx3j7kl635vz5wpmrh904z6dg4-libxml2-armv7l-unknown-linux-gnueabihf-2.12.6
+  Copying /nix/store/z4cqg84f6n7nl0mhabb03p3cq3qx7zxm-dbus-armv7l-unknown-linux-gnueabihf-1.14.10-man
+  Copying /nix/store/z63zj5qgqc7ykz99hibjkcpi6qkf1vm9-unit-multi-user.target
+  Copying /nix/store/z6f7bazvigz2ck1kwvimhr9wbn44fnc8-unit-network-setup.service
+  Copying /nix/store/z90hyr1w8if543wz57h0jizrglj3rn4d-fontconfig-armv7l-unknown-linux-gnueabihf-2.15.0-lib
+  Copying /nix/store/zc9pmm5n96bnvak7mkqf10lw4f8hw3m3-firewall-reload
+  Copying /nix/store/zcgxg148w16cl579cq0q96lrqdix6p23-nano-armv7l-unknown-linux-gnueabihf-7.2
+  Copying /nix/store/zkf3d59vdy5bnjmh0v4z2smsmqn5gz54-gawk-armv7l-unknown-linux-gnueabihf-5.2.2-man
+  Copying /nix/store/zlpn3fgf4g9wlpyv94lg11q8f2lskmh2-jq-armv7l-unknown-linux-gnueabihf-1.7.1-doc
+  Copying /nix/store/znmad2f8p557n219hm49cjymmygghcr7-aws-sdk-cpp-armv7l-unknown-linux-gnueabihf-1.11.296
+  Copying /nix/store/znrl2jqzgg0c8m7kh7vqrfp8wakpzzj1-unit-systemd-journal-flush.service
+  Copying /nix/store/zv8ncy6yqhdv3bm3ybmrq3a4jfvicfzp-dbus-1
+Done copying system closure...
+'/nix/store/arzqb8r96ic6khpal3f0n2r0s9wsaakx-closure-info/registration' -> './nix-path-registration'
+
+:: Running allocationPhase
+
+Reserving 316683 sectors for files...
+Reserving 6916 sectors for directories...
+Fudge factor: 52 / 1000
+Adding reservedSize: 1325461504 + 68923998 = 1394385502
+
+:: Running filesystemPhase
+
+
+:: Running copyPhase
+
+Creating filesystem with parameters:
+    Size: 1415356416
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 7856
+    Inode size: 256
+    Journal blocks: 5399
+    Label: NIXOS_SYSTEM
+    UUID: 01189998-8199-9119-7253-495443726F77
+    Blocks: 345546
+    Block groups: 11
+    Reserved blocks: 0
+    Reserved block group size: 87
+Created filesystem with 51583/86416 inodes and 329426/345546 blocks
+
+:: Running checkPhase
+
+e2fsck 1.47.0 (5-Feb-2023)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+Padding at end of inode bitmap is not set. Fix? yes
+
+
+NIXOS_SYSTEM: ***** FILE SYSTEM WAS MODIFIED *****
+NIXOS_SYSTEM: 51583/86416 files (0.0% non-contiguous), 329426/345546 blocks
+e2fsck 1.47.0 (5-Feb-2023)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+NIXOS_SYSTEM: 51583/86416 files (0.0% non-contiguous), 329426/345546 blocks
+
+:: Running additionalCommandsPhase
+
+:: Adding hydra-build-products
+    $ mkdir -p /nix/store/9ladgs9ikrz1nkl8pcg89isxfmx1wc8d-filesystem-image/nix-support
+    $ cat
+
+building '/nix/store/zdhgalh0fzrakb4mnwmnsbw663l0rwk4-android-fastboot-images-samsung-serranove.drv'...
+'/nix/store/9ladgs9ikrz1nkl8pcg89isxfmx1wc8d-filesystem-image/rootfs.img' -> '/nix/store/zbqp5hbdjgpbha3qqwymvzj301sg590c-android-fastboot-images-samsung-serranove/system.img'
+'/nix/store/gwwpafkmp9yxxq7yybycw82agpdqkk2r-mobile-nixos_samsung-serranove_boot.img' -> '/nix/store/zbqp5hbdjgpbha3qqwymvzj301sg590c-android-fastboot-images-samsung-serranove/boot.img'
+'/nix/store/p0d7mn7f9zarxkb6yirc3snhb84kwjwq-mobile-nixos_samsung-serranove_recovery.img' -> '/nix/store/zbqp5hbdjgpbha3qqwymvzj301sg590c-android-fastboot-images-samsung-serranove/recovery.img'
+/nix/store/zbqp5hbdjgpbha3qqwymvzj301sg590c-android-fastboot-images-samsung-serranove

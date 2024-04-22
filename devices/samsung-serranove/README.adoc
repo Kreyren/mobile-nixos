@@ -36,8 +36,8 @@ $ adb shell
 $ adb push result/boot.img /mnt2
 $ adb reboot
 
-TODO: Firmware notes
+:: TODO: Firmware notes
 
-Additional notes
+:: Additional notes
 
 In case the build breaks then first test the stage-1 with: $ nix-build examples/hello --argstr device samsung-sarranove -A outputs.default
