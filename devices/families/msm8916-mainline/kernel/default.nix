@@ -3,6 +3,8 @@
 , ...
 }:
 
+# Last updated: 20 Apr 2024
+
 mobile-nixos.kernel-builder {
   version = "6.7.0-rc4";
   configfile = ./config.arm;
@@ -10,7 +12,7 @@ mobile-nixos.kernel-builder {
   src = fetchFromGitHub {
     owner = "msm8916-mainline";
     repo = "linux";
-    rev = "6cc2342c6a7227a05ca94c836df42d5ba273eef2"; # branch msm8916/6.7-rc4, Checked 20 Apr 2024
+    rev = "6cc2342c6a7227a05ca94c836df42d5ba273eef2"; # branch msm8916/6.7-rc4
     sha256 = "sha256-zyAfQwiGx6vCdfRpnZl4qTqAM5TkIda7E0APnDiSF3E=";
   };
 

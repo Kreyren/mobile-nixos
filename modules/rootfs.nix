@@ -39,7 +39,9 @@ in
     mobile.generatedFilesystems.rootfs = lib.mkDefault {
       filesystem = "ext4";
       label = "NIXOS_SYSTEM";
-      ext4.partitionID = "01189998-8199-9119-7253-495443726F77";
+      # ext4.partitionID = "01189998-8199-9119-7253-495443726F77";
+      ext4.partitionID = "44444444-4444-4444-8888-888888888888";
+
 
       populateCommands =
       let

@@ -36,13 +36,9 @@
     };
   };
 
-  # Pending contribution: https://github.com/msm8916-mainline/linux/pull/354 -> Remove after
-  mobile.system.android.appendDTB = [
-    "dtbs/qcom-msm8916-${config.mobile.device.name}.dtb"
-  ];
-
+  # Due to hardware bug with the display wired backwards we need to do reflect_x (https://gitlab.com/postmarketOS/pmaports/-/issues/1340)
   boot.kernelParams = lib.mkAfter [
-    "reflect_x" # Due to hardware bug with the display wired backwards we need to do reflect_x (https://gitlab.com/postmarketOS/pmaports/-/issues/1340)
+    "video=${toString config.mobile.hardware.screen.width}x${toString config.mobile.hardware.screen.width},reflect_x"
   ];
 
   # mobile.device.firmware = pkgs.callPackage ./firmware {};
@@ -51,7 +47,13 @@
   # ];
 
   mobile.boot.stage-1.kernel.modules = [
-    "panel-samsung-s6e88a0-ams427ap24"
+    "panel-samsung-s6e88a0-ams427ap24" # Display panel
+
+    "zinitix" # Touch Screen Controller
+
+    # Power Management (Richtek RT5033)
+    "rt5033"
+    "rt5033-charger"
   ];
 
   # To manage: skip copying recovery image avb footer (recovery partition size: 15728640, recovery image size: 15820800).

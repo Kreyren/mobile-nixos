@@ -13,13 +13,13 @@ let
 in
 {
   options.services.eg25-manager = {
-    enable = mkEnableOption (mdDoc "Quectel EG25 modem manager service");
+    enable = mkEnableOption "Quectel EG25 modem manager service";
 
     package = mkOption {
       type = types.package;
       default = pkgs.eg25-manager;
       defaultText = literalExpression "pkgs.eg25-manager";
-      description = mdDoc ''
+      description = ''
         The eg25-manager derivation to use.
       '';
     };

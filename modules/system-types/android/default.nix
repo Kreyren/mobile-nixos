@@ -61,10 +61,15 @@ let
         --RECOVERY "$dir"/recovery.img
       ''}
     ''
-    else if flashingMethod == "lk2nd" then ''
+    else if (flashingMethod == "lk2nd" && config.mobile.device.name != "samsung-serranove") then ''
       echo "There is no automated script for flashing with lk2nd yet."
       echo "Please refer to the installation instructions for your device."
       exit 1
+    ''
+    # REVIEW(Krey): I don't really get a point of this file, it should probably be flashing the whole thing
+    else if (flashingMethod == "lk2nd" && config.mobile.device.name == "samsung-serranove") then ''
+      fastboot flash recovery "$dir"/recovery.img
+      fastboot flash system "$dir"/boot.img
     ''
     else builtins.throw "No flashing method for ${flashingMethod}"})
     echo ""
@@ -72,6 +77,45 @@ let
     echo "The system image needs to be flashed manually to the ${config.mobile.system.android.system_partition_destination} partition."
     EOF
     chmod +x $out/flash-critical.sh
+
+    # REVIEW(Krey): Proposed.. Can be removed as I just used it to make the development easier and to mitigate the risk of AMOLED burn-ins
+    cat > $out/flash-all.sh <<'EOF'
+    #!/usr/bin/env bash
+    dir="$(cd "$(dirname "''${BASH_SOURCE[0]}")"; echo "$PWD")"
+    PS4=" $ "
+    set -e # Exit on false return
+    read -p $'WARNING: You are about to OVERWRITE ALL DATA ON YOUR TARGET DEVICE and flash a new Operating System! Do you want to continue? (y/N)\n> ' nixifyMe
+    case "$nixifyMe" in
+      "YES"|"yes"|"Y"|"y") : ;;
+      *) echo "Aborting.."; exit 1
+    esac
+
+    ${if flashingMethod == "lk2nd" then ''
+      # Check for the device
+      while [ -z "$(fastboot devices)" ]; do
+        read -p "Device not found! Please set your device into the 'lk2nd mode', connect it to your system and press the Enter Key"
+      done
+
+      ${if config.mobile.device.name == "samsung-serranove" then ''
+        fastboot flash userdata "$dir"/system.img
+        ${optionalString has_recovery_partition ''fastboot flash recovery "$dir"/recovery.img''}
+        fastboot flash system "$dir"/boot.img
+        fastboot reboot # Reboot into the new system
+      ''
+      else ''
+        echo "There is no automated script for flashing all filesystems on this device (${config.mobile.device.name}) through lk2nd yet."
+        echo "Please refer to the installation instructions for your device."
+        exit 1
+      ''}
+    ''
+    else ''
+      echo "There is no automated script for flashing all filesystems on this device (${config.mobile.device.name}) yet."
+      echo "Please refer to the installation instructions for your device."
+      exit 1
+    ''}
+    echo "Flashing completed."
+    EOF
+    chmod +x $out/flash-all.sh
   '';
 
   mkBootimgOption = name: lib.mkOption {
